@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Banner - Carlos Andrés</title>
+    <title>Banner - Martha Lucía</title>
     <style>
         * {
             margin: 0;
@@ -4583,6 +4583,93 @@
             background-position: center;
             padding: 18px 16px 40px;
             text-align: center;
+        }
+
+        .nu-email-hero--savings-closed {
+            padding: 22px 14px 28px;
+        }
+
+        .nu-email-savings-hero-art {
+            position: relative;
+            display: inline-block;
+            margin: 4px 0 14px;
+            font-size: 52px;
+            line-height: 1;
+        }
+
+        .nu-email-savings-coin-x {
+            position: absolute;
+            top: -2px;
+            right: -8px;
+            background: #e53935;
+            color: #fff;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            font-size: 15px;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+        }
+
+        .nu-email-savings-stars {
+            position: absolute;
+            top: -14px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 13px;
+            letter-spacing: 2px;
+        }
+
+        .nu-email-body-savings-white {
+            background: #fff;
+            padding: 18px 14px 6px;
+        }
+
+        .nu-email-body-savings-white p {
+            margin: 0 0 12px;
+            font-size: 13px;
+            line-height: 1.5;
+            color: #333;
+        }
+
+        .nu-email-docs-box {
+            background: #ececec;
+            border-radius: 10px;
+            padding: 14px 14px 16px;
+            margin: 0 14px 18px;
+        }
+
+        .nu-email-docs-box h4 {
+            margin: 0 0 6px;
+            font-size: 14px;
+            font-weight: 800;
+            color: #111;
+        }
+
+        .nu-email-docs-box p {
+            margin: 0 0 14px;
+            font-size: 12px;
+            color: #444;
+            line-height: 1.45;
+        }
+
+        .nu-email-docs-box .nu-email-docs-item:last-child p {
+            margin-bottom: 0;
+        }
+
+        .nu-email-body-savings-tail {
+            background: #fff;
+            padding: 0 14px 18px;
+            font-size: 13px;
+            line-height: 1.5;
+        }
+
+        .nu-email-body-savings-tail a {
+            color: #1a73e8;
         }
 
         .nu-email-invoice-hero-top {
@@ -12634,20 +12721,43 @@
             flex: 1;
             min-width: 0;
             display: flex;
-            align-items: flex-start;
+            align-items: center;
             justify-content: space-between;
-            gap: 12px;
+            gap: 16px;
         }
 
         .loans-card-title {
             font-size: 12px;
             font-weight: 400;
             color: #111;
-            line-height: 1.25;
+            line-height: 1.3;
+            flex: 1;
+            min-width: 0;
         }
 
         .loans-card-title-line {
             display: block;
+        }
+
+        .loans-card-product-type {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+            color: #4a6b82;
+            text-transform: uppercase;
+            line-height: 1.2;
+            flex-shrink: 0;
+            text-align: center;
+        }
+
+        .loans-card-state-paid {
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.04em;
+            color: #111;
+            text-transform: uppercase;
+            line-height: 1.2;
+            flex-shrink: 0;
         }
 
         .loans-card-status {
@@ -17485,14 +17595,14 @@
             <div class="user-info">
                 <div class="user-name">
                     <img src="images/icono1.png" alt="" class="user-icon">
-                    <span>Carlos Andrés (Carlos Andrés Rojas Peña)</span>
+                    <span>Martha Lucía (Martha Lucía Gómez Ruiz)</span>
                 </div>
                 <div class="user-details">
                     <span class="user-detail-printed">
                         <span class="user-detail-printed-label">Printed Name:</span>
-                        <span class="user-detail-printed-value">CARLOS ROJAS</span>
+                        <span class="user-detail-printed-value">MARTHA GÓMEZ</span>
                     </span>
-                    <span>ID Number: CC-1234567890</span>
+                    <span>ID Number: CC -98765433</span>
                 </div>
             </div>
             <div class="header-buttons">
@@ -17612,17 +17722,17 @@
                         <div class="info-section person-info-section-bordered">
                             <div class="person-info-top-layout">
                                 <div class="profile-photo-section">
-                                    <img class="profile-photo" src="images/Carlos.png" alt="Foto de perfil — Carlos" onclick="showProfilePhotoModal()" style="cursor: pointer;" title="Ver foto ampliada" width="64" height="96">
+                                    <img class="profile-photo" src="images/Martha.png" alt="Foto de perfil — Martha Lucía" onclick="showProfilePhotoModal()" style="cursor: pointer;" title="Ver foto ampliada" width="64" height="96">
                                 </div>
                                 <div class="person-info-top-fields">
                                     <div class="person-info-field-block info-field">
                                         <label class="info-label copyable" onclick="copyFieldValue(event)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();copyFieldValue(event);}" role="button" tabindex="0">PREFERRED NAME</label>
-                                        <div class="info-value person-info-value-main person-info-value-copyable" onclick="copyFieldValue(event)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();copyFieldValue(event);}" role="button" tabindex="0" title="Copiar">Carlos Andrés (Carlos Andrés Rojas Peña)</div>
+                                        <div class="info-value person-info-value-main person-info-value-copyable" onclick="copyFieldValue(event)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();copyFieldValue(event);}" role="button" tabindex="0" title="Copiar">Martha Lucía (Martha Lucía Gómez Ruiz)</div>
                                     </div>
                                     <div class="person-info-field-block info-field">
                                         <label class="info-label copyable" onclick="copyFieldValue(event)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();copyFieldValue(event);}" role="button" tabindex="0">EMAIL</label>
                                         <div class="info-value-with-icon person-info-email-line person-info-value-copyable" onclick="copyFieldValue(event)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();copyFieldValue(event);}" role="button" tabindex="0" title="Copiar correo">
-                                            <span class="info-value person-info-value-main">c.rojas88@example.com</span><span class="person-info-icon-email" title="Verificado">
+                                            <span class="info-value person-info-value-main">martha.gomez.tst@mail.co</span><span class="person-info-icon-email" title="Verificado">
                                                 <svg width="22" height="22" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                                                     <path d="M3 6h20a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1z" stroke="#28a745" stroke-width="1.5" fill="none"/>
                                                     <path d="M3 7l10 7 10-7" stroke="#28a745" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -17636,19 +17746,19 @@
                             <div class="person-info-row">
                                 <div class="info-field">
                                     <label class="info-label copyable" onclick="copyFieldValue(event)" role="button" tabindex="0">PRINTED NAME</label>
-                                    <div class="info-value person-info-value-main">CARLOS ROJAS</div>
+                                    <div class="info-value person-info-value-main">MARTHA GÓMEZ</div>
                                 </div>
                             </div>
                             <div class="person-info-row">
                                 <div class="info-field">
                                     <label class="info-label copyable" onclick="copyFieldValue(event)" role="button" tabindex="0">TAX ID</label>
-                                    <div class="info-value person-info-value-main">CC-1234567890</div>
+                                    <div class="info-value person-info-value-main">CC -98765433</div>
                                 </div>
                             </div>
                             <div class="person-info-row">
                                 <div class="info-field">
                                     <label class="info-label copyable" onclick="copyFieldValue(event)" role="button" tabindex="0">BIRTHDATE</label>
-                                    <div class="info-value person-info-value-main">14/05/1988</div>
+                                    <div class="info-value person-info-value-main">22/11/1975</div>
                                 </div>
                             </div>
                             <div class="person-info-row">
@@ -17680,7 +17790,7 @@
                             <div class="person-info-row">
                                 <div class="info-field">
                                     <label class="info-label copyable" onclick="copyFieldValue(event)" role="button" tabindex="0">PHONE NUMBER</label>
-                                    <div class="info-value person-info-value-main">(57) 31045-6789 0</div>
+                                    <div class="info-value person-info-value-main">(57) 30021-2445 5</div>
                                 </div>
                             </div>
                             <div class="person-info-row">
@@ -17698,13 +17808,13 @@
                             <div class="person-info-row">
                                 <div class="info-field">
                                     <label class="info-label copyable" onclick="copyFieldValue(event)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();copyFieldValue(event);}" role="button" tabindex="0">CUSTOMER ID</label>
-                                    <div class="info-value person-info-value-muted person-info-value-copyable" onclick="copyFieldValue(event)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();copyFieldValue(event);}" role="button" tabindex="0" title="Copiar">d3b07384-d92d-4e4a-bc0d-0315938f3653</div>
+                                    <div class="info-value person-info-value-muted person-info-value-copyable" onclick="copyFieldValue(event)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();copyFieldValue(event);}" role="button" tabindex="0" title="Copiar">a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6</div>
                                 </div>
                             </div>
                             <div class="person-info-row">
                                 <div class="info-field">
                                     <label class="info-label copyable" onclick="copyFieldValue(event)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();copyFieldValue(event);}" role="button" tabindex="0">PROSPECT ID</label>
-                                    <div class="info-value person-info-value-muted person-info-value-copyable" onclick="copyFieldValue(event)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();copyFieldValue(event);}" role="button" tabindex="0" title="Copiar">d3b07384-d92d-4e4a-bc0d-0315938f3653</div>
+                                    <div class="info-value person-info-value-muted person-info-value-copyable" onclick="copyFieldValue(event)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();copyFieldValue(event);}" role="button" tabindex="0" title="Copiar">a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6</div>
                                 </div>
                             </div>
                             <div class="person-info-row">
@@ -17736,7 +17846,7 @@
                     </div>
                     <div class="widget-content" id="phoneContent">
                         <div class="phone-item">
-                            <span class="phone-number">(57) 31045-6789 0</span>
+                            <span class="phone-number">(57) 30021-2445 5</span>
                             <span class="phone-type">unclassified</span>
                             <span class="phone-owner">customer</span>
                         </div>
@@ -17785,31 +17895,6 @@
                     </div>
                     <div class="interactions-list" id="interactionsList">
                         <div class="year-separator">2026</div>
-                        <div class="interaction-item" data-interaction-channel="email" data-interaction-date="2026-03-21" data-interaction="email-cert" onclick="event.stopPropagation(); openCertificateEmailModal();" role="button" tabindex="0" style="cursor: pointer;" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();event.stopPropagation();openCertificateEmailModal();}">
-                            <div class="interaction-time">03/21/2026 5:07 PM</div>
-                            <div class="interaction-type">
-                                <span class="interaction-icon" aria-hidden="true">✉️</span>
-                                <span><strong>Email</strong></span>
-                            </div>
-                        </div>
-                        <div class="interaction-item" data-interaction-channel="chat" data-interaction-date="2026-03-21" data-chat="documents" onclick="event.stopPropagation(); openDocumentsChatModal();" role="button" tabindex="0" style="cursor: pointer;" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();event.stopPropagation();openDocumentsChatModal();}">
-                            <div class="interaction-time">03/21/2026 4:02 PM</div>
-                            <div class="interaction-type">
-                                <span class="interaction-icon" aria-hidden="true">💬</span>
-                                <span>Chat - others.documents</span>
-                            </div>
-                            <div class="interaction-email">pepito.perez@nu.com.co <span class="copy-icon">📋</span></div>
-                        </div>
-                        <div class="interaction-item" data-interaction-channel="phone" data-interaction-date="2026-03-20">
-                            <div class="interaction-time">03/20/2026 1:01 PM</div>
-                            <div class="interaction-type">
-                                <span class="interaction-icon" aria-hidden="true">📞</span>
-                                <span><strong>Call - savings.others.virtual_card</strong></span>
-                            </div>
-                            <div class="interaction-email">pepito.perez@nu.com.co <span class="copy-icon">📋</span></div>
-                            <div class="interaction-email">Case number: 00002582206 <span class="copy-icon">📋</span></div>
-                            <div class="interaction-email">Phone: +573115070655 <span class="copy-icon">📋</span></div>
-                        </div>
                         <div class="interaction-item" data-interaction-channel="chat" data-interaction-date="2026-02-12" data-chat="savings" onclick="openSavingsChatModal()" role="button" tabindex="0" style="cursor: pointer;">
                             <div class="interaction-time">02/12/2026 9:35 AM</div>
                             <div class="interaction-type">
@@ -18453,7 +18538,7 @@
                                 <div class="card-details-grid">
                                     <div class="card-detail-field">
                                         <label class="card-detail-label">OWNER <span class="copy-icon">📋</span></label>
-                                        <div class="card-detail-value">Carlos Andrés Rojas Peña</div>
+                                        <div class="card-detail-value">Martha Lucía Gómez Ruiz</div>
                                     </div>
                                     <div class="card-detail-field">
                                         <label class="card-detail-label">HOLDER <span class="copy-icon">📋</span></label>
@@ -18502,69 +18587,8 @@
                     </div>
                     <div class="widget-content" id="billsContent">
                         <div class="bills-list">
-                            <!-- SEP 2026 -->
-                            <div class="bill-item" onclick="openBillDetail(0)">
-                                <div class="bill-month-box" style="background: #D99A50;">SEP 2026</div>
-                                <div class="bill-details">
-                                    <div class="bill-grid-row">
-                                        <span class="bill-lbl">Close Date</span>
-                                        <span class="bill-lbl">Due Date</span>
-                                    </div>
-                                    <div class="bill-grid-row bill-grid-row--values">
-                                        <span class="bill-val">12 AGO 2026</span>
-                                        <span class="bill-val">01 SEP</span>
-                                    </div>
-                                    <div class="bill-grid-row bill-grid-row--span1 bill-grid-row--payment-lbl">
-                                        <span class="bill-lbl bill-lbl--block">Minimum estimated payment</span>
-                                    </div>
-                                    <div class="bill-grid-row bill-grid-row--span1 bill-grid-row--values">
-                                        <span class="bill-amt">$ 498.296,65</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- AGO 2026 -->
-                            <div class="bill-item" onclick="openBillDetail(1)">
-                                <div class="bill-month-box" style="background: #D99A50;">AGO 2026</div>
-                                <div class="bill-details">
-                                    <div class="bill-grid-row">
-                                        <span class="bill-lbl">Close Date</span>
-                                        <span class="bill-lbl">Due Date</span>
-                                    </div>
-                                    <div class="bill-grid-row bill-grid-row--values">
-                                        <span class="bill-val">12 JUL 2026</span>
-                                        <span class="bill-val">01 AGO (03 AGO)</span>
-                                    </div>
-                                    <div class="bill-grid-row bill-grid-row--span1 bill-grid-row--payment-lbl">
-                                        <span class="bill-lbl bill-lbl--block">Minimum estimated payment</span>
-                                    </div>
-                                    <div class="bill-grid-row bill-grid-row--span1 bill-grid-row--values">
-                                        <span class="bill-amt">$ 514.459,15</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- JUL 2026 -->
-                            <div class="bill-item" onclick="openBillDetail(2)">
-                                <div class="bill-month-box" style="background: #D99A50;">JUL 2026</div>
-                                <div class="bill-details">
-                                    <div class="bill-grid-row">
-                                        <span class="bill-lbl">Close Date</span>
-                                        <span class="bill-lbl">Due Date</span>
-                                    </div>
-                                    <div class="bill-grid-row bill-grid-row--values">
-                                        <span class="bill-val">11 JUN 2026</span>
-                                        <span class="bill-val">01 JUL</span>
-                                    </div>
-                                    <div class="bill-grid-row bill-grid-row--span1 bill-grid-row--payment-lbl">
-                                        <span class="bill-lbl bill-lbl--block">Minimum estimated payment</span>
-                                    </div>
-                                    <div class="bill-grid-row bill-grid-row--span1 bill-grid-row--values">
-                                        <span class="bill-amt">$ 540.514,15</span>
-                                    </div>
-                                </div>
-                            </div>
                             <!-- JUN 2026 -->
-                            <div class="bill-item" onclick="openBillDetail(3)">
+                            <div class="bill-item" onclick="openBillDetail(0)">
                                 <div class="bill-month-box" style="background: #69B3C2;">JUN 2026</div>
                                 <div class="bill-details">
                                     <div class="bill-grid-row">
@@ -18579,12 +18603,12 @@
                                         <span class="bill-lbl bill-lbl--block">Minimum estimated payment</span>
                                     </div>
                                     <div class="bill-grid-row bill-grid-row--span1 bill-grid-row--values">
-                                        <span class="bill-amt">$ 576.439,89</span>
+                                        <span class="bill-amt">$ 0,00</span>
                                     </div>
                                 </div>
                             </div>
                             <!-- MAY 2026 -->
-                            <div class="bill-item bill-item--dual" onclick="openBillDetail(4)">
+                            <div class="bill-item bill-item--dual" onclick="openBillDetail(1)">
                                 <div class="bill-month-box" style="background: #D8756A;">MAY 2026</div>
                                 <div class="bill-details">
                                     <div class="bill-grid-row">
@@ -18606,7 +18630,7 @@
                                 </div>
                             </div>
                             <!-- ABR 2026 -->
-                            <div class="bill-item bill-item--dual" onclick="openBillDetail(5)">
+                            <div class="bill-item bill-item--dual" onclick="openBillDetail(2)">
                                 <div class="bill-month-box" style="background: #9BCB45;">ABR 2026</div>
                                 <div class="bill-details">
                                     <div class="bill-grid-row">
@@ -18628,7 +18652,7 @@
                                 </div>
                             </div>
                             <!-- MAR 2026 -->
-                            <div class="bill-item bill-item--dual" onclick="openBillDetail(6)">
+                            <div class="bill-item bill-item--dual" onclick="openBillDetail(3)">
                                 <div class="bill-month-box" style="background: #9BCB45;">MAR 2026</div>
                                 <div class="bill-details">
                                     <div class="bill-grid-row">
@@ -18650,7 +18674,7 @@
                                 </div>
                             </div>
                             <!-- FEB 2026 -->
-                            <div class="bill-item bill-item--dual" onclick="openBillDetail(7)">
+                            <div class="bill-item bill-item--dual" onclick="openBillDetail(4)">
                                 <div class="bill-month-box" style="background: #9BCB45;">FEB 2026</div>
                                 <div class="bill-details">
                                     <div class="bill-grid-row">
@@ -18672,7 +18696,7 @@
                                 </div>
                             </div>
                             <!-- ENE 2026 -->
-                            <div class="bill-item bill-item--dual" onclick="openBillDetail(8)">
+                            <div class="bill-item bill-item--dual" onclick="openBillDetail(5)">
                                 <div class="bill-month-box" style="background: #9BCB45;">ENE 2026</div>
                                 <div class="bill-details">
                                     <div class="bill-grid-row">
@@ -18694,7 +18718,7 @@
                                 </div>
                             </div>
                             <!-- DIC 2025 -->
-                            <div class="bill-item bill-item--dual" onclick="openBillDetail(9)">
+                            <div class="bill-item bill-item--dual" onclick="openBillDetail(6)">
                                 <div class="bill-month-box" style="background: #9BCB45;">DIC 2025</div>
                                 <div class="bill-details">
                                     <div class="bill-grid-row">
@@ -18716,7 +18740,7 @@
                                 </div>
                             </div>
                             <!-- NOV 2025 -->
-                            <div class="bill-item bill-item--dual" onclick="openBillDetail(10)">
+                            <div class="bill-item bill-item--dual" onclick="openBillDetail(7)">
                                 <div class="bill-month-box" style="background: #9BCB45;">NOV 2025</div>
                                 <div class="bill-details">
                                     <div class="bill-grid-row">
@@ -19212,7 +19236,7 @@
                         <div class="category-item category-item-expandable" data-abu-history-expanded="false">
                             <div class="category-item-row">
                                 <div class="category-left abu-category-left--expand" onclick="event.stopPropagation(); toggleAbuCardHistory(this)">
-                                    <span class="category-name">Card Virtual Debit [Carlos]</span>
+                                    <span class="category-name">Card Virtual Debit [Martha Lucía]</span>
                                     <div class="toggle-switch-abu" onclick="event.stopPropagation(); toggleAbuSwitch(this)">
                                         <div class="toggle-slider-abu"></div>
                                     </div>
@@ -20350,7 +20374,7 @@
                         <div class="challenge-field full-width">
                             <label class="challenge-label">ID</label>
                             <div class="challenge-value">
-                                d3b07384-d92d-4e4a-bc0d-0315938f3653
+                                a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6
                                 <span class="copy-icon">📋</span>
                             </div>
                         </div>
@@ -20476,7 +20500,7 @@
                                                 <div class="challenge-detail-main">
                                                     <div class="challenge-field full-width">
                                                         <label class="challenge-label">ID</label>
-                                                        <div class="challenge-value">d3b07384-d92d-4e4a-bc0d-0315938f3653<span class="copy-icon">📋</span></div>
+                                                        <div class="challenge-value">a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6<span class="copy-icon">📋</span></div>
                                                     </div>
                                                     <div class="challenge-field full-width">
                                                         <label class="challenge-label">RESULT</label>
@@ -20497,7 +20521,7 @@
                                                 </div>
                                                 <div class="challenge-detail-photo-col">
                                                     <button type="button" class="challenge-detail-photo-frame challenge-detail-photo-open" onclick="openChallengePhotoViewer()" aria-label="Ver foto ampliada">
-                                                        <img src="images/Carlos.png" alt="" loading="lazy" decoding="async">
+                                                        <img src="images/Martha.png" alt="" loading="lazy" decoding="async">
                                                     </button>
                                                     <button type="button" class="challenge-detail-eye-btn" title="View" aria-label="View photo" onclick="openChallengePhotoViewer()">
                                                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 5C7 5 2.73 8.11 1 12.5 2.73 16.89 7 20 12 20s9.27-3.11 11-7.5C21.27 8.11 17 5 12 5zm0 12.5a5 5 0 110-10 5 5 0 010 10z" fill="currentColor"/></svg>
@@ -20512,7 +20536,7 @@
                             <div class="challenge-field full-width">
                                 <label class="challenge-label">ID</label>
                                 <div class="challenge-value">
-                                    d3b07384-d92d-4e4a-bc0d-0315938f3653
+                                    a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6
                                     <span class="copy-icon">📋</span>
                                 </div>
                             </div>
@@ -20660,7 +20684,7 @@
                             <div class="money-box-info">
                                 <div class="money-box-info-row">
                                     <span class="money-box-info-label">Total balance</span>
-                                    <span class="money-box-info-value">$2,655.15</span>
+                                    <span class="money-box-info-value">$0,00</span>
                                 </div>
                                 <div class="money-box-info-row">
                                     <span class="money-box-info-label">Total yield</span>
@@ -20669,7 +20693,7 @@
                                 <div class="money-box-info-divider" aria-hidden="true"></div>
                                 <div class="money-box-info-row">
                                     <span class="money-box-info-label">Available balance</span>
-                                    <span class="money-box-info-value">$2,655.15</span>
+                                    <span class="money-box-info-value">$0,00</span>
                                 </div>
                             </div>
                             <div class="money-box-card-actions">
@@ -20700,7 +20724,7 @@
                                             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px;">
                                                 <div>
                                                     <div class="mb-assets-grid-label">Net balance</div>
-                                                    <div class="mb-assets-grid-value">$2,655.15</div>
+                                                    <div class="mb-assets-grid-value">$0,00</div>
                                                 </div>
                                                 <div>
                                                     <div class="mb-assets-grid-label">Yield</div>
@@ -20719,419 +20743,6 @@
                                                 <div class="mb-details-expanded-inner">
                                                     <div class="mb-simple-id-label">Simple-account ID</div>
                                                     <div class="mb-simple-id-value">696D18E0 DA39 4FBF B133 CC6657955E6</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="money-box-card">
-                            <div class="money-box-header money-box-header--with-badge">
-                                <div class="money-box-icon" aria-hidden="true">🔒</div>
-                                <div class="money-box-name">Mi primera Cajita</div>
-                                <div class="money-box-locked-badge"><span aria-hidden="true">📊</span> Locked</div>
-                            </div>
-                            <div class="money-box-info">
-                                <div class="money-box-info-row">
-                                    <span class="money-box-info-label">Total balance</span>
-                                    <span class="money-box-info-value">$1,016,443.84</span>
-                                </div>
-                                <div class="money-box-info-row">
-                                    <span class="money-box-info-label">Total yield</span>
-                                    <span class="money-box-info-value money-box-yield">↑ $16,443.84</span>
-                                </div>
-                                <div class="money-box-info-divider" aria-hidden="true"></div>
-                                <div class="money-box-info-row">
-                                    <span class="money-box-info-label">Available balance</span>
-                                    <span class="money-box-info-value">$0.00</span>
-                                </div>
-                                <div class="money-box-info-row">
-                                    <span class="money-box-info-label">Locked balance</span>
-                                    <span class="money-box-info-value">$1,016,443.84</span>
-                                </div>
-                            </div>
-                            <div class="money-box-card-actions">
-                                <div class="money-box-action-block">
-                                    <button type="button" class="money-box-action-btn money-box-action-btn-split" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none'">
-                                        <span class="money-box-action-btn-main"><span aria-hidden="true">📄</span> More information</span><span class="money-box-action-btn-chev" aria-hidden="true">›</span>
-                                    </button>
-                                    <div class="mb-expand-panel mb-expand-panel--body-only" style="display: none;">
-                                        <div class="mb-expand-panel-body">
-                                            <div class="mb-field-block">
-                                                <div class="mb-field-label">Creation date</div>
-                                                <div class="mb-field-value">08/12/2024, 15:21:54</div>
-                                            </div>
-                                            <div class="mb-field-block">
-                                                <div class="mb-field-label">Money Box ID</div>
-                                                <div class="mb-field-value">66ba1a82-8371-40f8-b7b3-192bb808b4cb</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="money-box-action-block">
-                                    <button type="button" class="money-box-action-btn money-box-action-btn-split" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none'">
-                                        <span class="money-box-action-btn-main"><span aria-hidden="true">📊</span> Assets composition</span><span class="money-box-action-btn-chev" aria-hidden="true">›</span>
-                                    </button>
-                                    <div style="display: none; margin-top: 8px;">
-                                        <div class="mb-expand-panel" style="margin-top: 0;">
-                                            <div class="mb-assets-composition-stack">
-                                                <div class="mb-asset-subcard">
-                                                    <div class="mb-assets-title">CDT</div>
-                                                    <div class="mb-assets-2grid">
-                                                        <div>
-                                                            <div class="mb-assets-grid-label mb-assets-grid-label--emph">Net balance</div>
-                                                            <div class="mb-assets-grid-value">$1,016,443.84</div>
-                                                        </div>
-                                                        <div>
-                                                            <div class="mb-assets-grid-label mb-assets-grid-label--emph">Yield</div>
-                                                            <div class="mb-assets-grid-value money-box-yield">↑ $16,443.84</div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="mb-assets-2grid" style="margin-top: 12px;">
-                                                        <div>
-                                                            <div class="mb-assets-grid-label mb-assets-grid-label--emph">Interest rate</div>
-                                                            <div class="mb-assets-grid-value mb-assets-grid-value--meta">9.40%</div>
-                                                        </div>
-                                                        <div>
-                                                            <div class="mb-assets-grid-label mb-assets-grid-label--emph">Maturation date</div>
-                                                            <div class="mb-assets-grid-value mb-assets-grid-value--meta">10/31/2026</div>
-                                                        </div>
-                                                    </div>
-                                                    <button type="button" class="mb-details-trigger" onclick="var n=this.nextElementSibling; n.style.display=n.style.display==='none'?'block':'none';">
-                                                        <span><span aria-hidden="true">📄</span> Details</span>
-                                                        <span aria-hidden="true">›</span>
-                                                    </button>
-                                                    <div class="mb-details-nested" style="display: none;">
-                                                        <div class="mb-details-expanded-inner mb-details-cdt">
-                                                            <div class="mb-details-cdt-top">
-                                                                <div>
-                                                                    <div class="mb-details-kv-label">Applied value</div>
-                                                                    <div class="mb-details-kv-value">$1,000,000.00</div>
-                                                                </div>
-                                                                <div>
-                                                                    <div class="mb-details-kv-label">Interest rate</div>
-                                                                    <div class="mb-details-kv-value">9.40%</div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="mb-details-kv-row">
-                                                                <div class="mb-details-kv-label">Gross yield</div>
-                                                                <div class="mb-details-kv-value money-box-yield">↑ $68,716.00</div>
-                                                            </div>
-                                                            <div class="mb-details-kv-row">
-                                                                <div class="mb-details-kv-label">Source retention</div>
-                                                                <div class="mb-details-kv-value">$2,748.64</div>
-                                                            </div>
-                                                            <div class="mb-details-kv-row">
-                                                                <div class="mb-details-kv-label">Net yield</div>
-                                                                <div class="mb-details-kv-value money-box-yield">↑ $16,443.84</div>
-                                                            </div>
-                                                            <div class="mb-details-kv-row">
-                                                                <div class="mb-details-kv-label">Total net</div>
-                                                                <div class="mb-details-kv-value">$1,016,443.84</div>
-                                                            </div>
-                                                            <div class="mb-details-kv-row">
-                                                                <div class="mb-details-kv-label">Estimated value at maturity</div>
-                                                                <div class="mb-details-kv-value">$1,065,967.36</div>
-                                                            </div>
-                                                            <div class="mb-details-kv-row">
-                                                                <div class="mb-details-kv-label">Creation date</div>
-                                                                <div class="mb-details-kv-value">02/03/2026</div>
-                                                            </div>
-                                                            <div class="mb-details-kv-row">
-                                                                <div class="mb-details-kv-label">Maturity date</div>
-                                                                <div class="mb-details-kv-value">10/31/2026</div>
-                                                            </div>
-                                                            <div class="mb-details-kv-row">
-                                                                <div class="mb-details-kv-label">Automatic renewal</div>
-                                                                <div class="mb-details-kv-value">No</div>
-                                                            </div>
-                                                            <div class="mb-details-kv-row">
-                                                                <div class="mb-details-kv-label">Simple-account ID</div>
-                                                                <div class="mb-simple-id-value" style="margin-top: 4px;">A8D6FC48 515C 3FE1 904D D4447B1460</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="mb-asset-subcard">
-                                                    <div class="mb-assets-title">Liquid Cash Deposit</div>
-                                                    <div class="mb-assets-2grid">
-                                                        <div>
-                                                            <div class="mb-assets-grid-label mb-assets-grid-label--emph">Net balance</div>
-                                                            <div class="mb-assets-grid-value">$0.00</div>
-                                                        </div>
-                                                        <div>
-                                                            <div class="mb-assets-grid-label mb-assets-grid-label--emph">Yield</div>
-                                                            <div class="mb-assets-grid-value money-box-yield">↑ $0.00</div>
-                                                        </div>
-                                                    </div>
-                                                    <div style="margin-bottom: 0;">
-                                                        <div class="mb-assets-grid-label mb-assets-grid-label--emph">Interest rate</div>
-                                                        <div class="mb-assets-grid-value mb-assets-grid-value--meta">9.25%</div>
-                                                    </div>
-                                                    <button type="button" class="mb-details-trigger" style="margin-top: 12px;" onclick="var n=this.nextElementSibling; n.style.display=n.style.display==='none'?'block':'none';">
-                                                        <span><span aria-hidden="true">📄</span> Details</span>
-                                                        <span aria-hidden="true">›</span>
-                                                    </button>
-                                                    <div class="mb-details-nested" style="display: none;">
-                                                        <div class="mb-lcd-details-panel">
-                                                            <div class="mb-expand-panel-body">
-                                                                <div class="mb-simple-id-label">Simple-account ID</div>
-                                                                <div class="mb-simple-id-value">66BA1A82 937D 4790 9369 B58146242C8E</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="money-box-card">
-                            <div class="money-box-header money-box-header--with-badge">
-                                <div class="money-box-icon money-box-icon-briefcase" aria-hidden="true">
-                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect x="6" y="9" width="12" height="9" rx="1.2" stroke="#757575" stroke-width="1.35" fill="none"/>
-                                        <path d="M9 9V8a2 2 0 012-2h2a2 2 0 012 2v1" stroke="#757575" stroke-width="1.35" fill="none" stroke-linecap="round"/>
-                                        <text x="12" y="17" text-anchor="middle" font-size="8.5" font-weight="700" fill="#555" font-family="system-ui, -apple-system, sans-serif">$</text>
-                                    </svg>
-                                </div>
-                                <div class="money-box-name">Prestaciones sociales</div>
-                                <div class="money-box-locked-badge money-box-locked-badge--blue"><span aria-hidden="true">📊</span> Locked</div>
-                            </div>
-                            <div class="money-box-info">
-                                <div class="money-box-info-row">
-                                    <span class="money-box-info-label">Total balance</span>
-                                    <span class="money-box-info-value">$3,480,602.81</span>
-                                </div>
-                                <div class="money-box-info-row">
-                                    <span class="money-box-info-label">Total yield</span>
-                                    <span class="money-box-info-value money-box-yield">↑ $482,338.30</span>
-                                </div>
-                                <div class="money-box-info-divider" aria-hidden="true"></div>
-                                <div class="money-box-info-row">
-                                    <span class="money-box-info-label">Available balance</span>
-                                    <span class="money-box-info-value">$1,597,095.52</span>
-                                </div>
-                                <div class="money-box-info-row">
-                                    <span class="money-box-info-label">Locked balance</span>
-                                    <span class="money-box-info-value">$1,883,507.29</span>
-                                </div>
-                            </div>
-                            <div class="money-box-card-actions">
-                                <div class="money-box-action-block">
-                                    <button type="button" class="money-box-action-btn money-box-action-btn-split" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none'">
-                                        <span class="money-box-action-btn-main"><span aria-hidden="true">📄</span> More information</span><span class="money-box-action-btn-chev" aria-hidden="true">›</span>
-                                    </button>
-                                    <div class="mb-expand-panel mb-expand-panel--body-only" style="display: none;">
-                                        <div class="mb-expand-panel-body">
-                                            <div class="mb-field-block">
-                                                <div class="mb-field-label">Creation date</div>
-                                                <div class="mb-field-value">08/20/2024, 23:56:12</div>
-                                            </div>
-                                            <div class="mb-field-block">
-                                                <div class="mb-field-label">Money Box ID</div>
-                                                <div class="mb-field-value">66c51f0c-6afc-46e3-98e2-7cfe59cd8fd9</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="money-box-action-block">
-                                    <button type="button" class="money-box-action-btn money-box-action-btn-split" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none'">
-                                        <span class="money-box-action-btn-main"><span aria-hidden="true">📊</span> Assets composition</span><span class="money-box-action-btn-chev" aria-hidden="true">›</span>
-                                    </button>
-                                    <div style="display: none; margin-top: 8px;">
-                                        <div class="mb-expand-panel" style="margin-top: 0;">
-                                            <div class="mb-assets-composition-stack">
-                                                <div class="mb-asset-subcard">
-                                                    <div class="mb-assets-title">CDT</div>
-                                                    <div class="mb-assets-2grid">
-                                                        <div>
-                                                            <div class="mb-assets-grid-label mb-assets-grid-label--emph">Net balance</div>
-                                                            <div class="mb-assets-grid-value">$1,883,507.29</div>
-                                                        </div>
-                                                        <div>
-                                                            <div class="mb-assets-grid-label mb-assets-grid-label--emph">Yield</div>
-                                                            <div class="mb-assets-grid-value money-box-yield">↑ $23,921.70</div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="mb-assets-2grid" style="margin-top: 12px;">
-                                                        <div>
-                                                            <div class="mb-assets-grid-label mb-assets-grid-label--emph">Interest rate</div>
-                                                            <div class="mb-assets-grid-value mb-assets-grid-value--meta">9.60%</div>
-                                                        </div>
-                                                        <div>
-                                                            <div class="mb-assets-grid-label mb-assets-grid-label--emph">Maturation date</div>
-                                                            <div class="mb-assets-grid-value mb-assets-grid-value--meta">06/19/2026</div>
-                                                        </div>
-                                                    </div>
-                                                    <button type="button" class="mb-details-trigger" onclick="var n=this.nextElementSibling; n.style.display=n.style.display==='none'?'block':'none';">
-                                                        <span><span aria-hidden="true">📄</span> Details</span>
-                                                        <span aria-hidden="true">›</span>
-                                                    </button>
-                                                    <div class="mb-details-nested" style="display: none;">
-                                                        <div class="mb-details-expanded-inner mb-details-cdt">
-                                                            <div class="mb-details-cdt-top">
-                                                                <div>
-                                                                    <div class="mb-details-kv-label">Applied value</div>
-                                                                    <div class="mb-details-kv-value">$1,859,585.59</div>
-                                                                </div>
-                                                                <div>
-                                                                    <div class="mb-details-kv-label">Interest rate</div>
-                                                                    <div class="mb-details-kv-value">9.60%</div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="mb-details-kv-row">
-                                                                <div class="mb-details-kv-label">Gross yield</div>
-                                                                <div class="mb-details-kv-value money-box-yield">↑ $56,895.88</div>
-                                                            </div>
-                                                            <div class="mb-details-kv-row">
-                                                                <div class="mb-details-kv-label">Source retention</div>
-                                                                <div class="mb-details-kv-value">$2,275.84</div>
-                                                            </div>
-                                                            <div class="mb-details-kv-row">
-                                                                <div class="mb-details-kv-label">Net yield</div>
-                                                                <div class="mb-details-kv-value money-box-yield">↑ $23,921.70</div>
-                                                            </div>
-                                                            <div class="mb-details-kv-row">
-                                                                <div class="mb-details-kv-label">Total net</div>
-                                                                <div class="mb-details-kv-value">$1,883,507.29</div>
-                                                            </div>
-                                                            <div class="mb-details-kv-row">
-                                                                <div class="mb-details-kv-label">Estimated value at maturity</div>
-                                                                <div class="mb-details-kv-value">$1,914,205.63</div>
-                                                            </div>
-                                                            <div class="mb-details-kv-row">
-                                                                <div class="mb-details-kv-label">Creation date</div>
-                                                                <div class="mb-details-kv-value">02/19/2026</div>
-                                                            </div>
-                                                            <div class="mb-details-kv-row">
-                                                                <div class="mb-details-kv-label">Maturity date</div>
-                                                                <div class="mb-details-kv-value">06/19/2026</div>
-                                                            </div>
-                                                            <div class="mb-details-kv-row">
-                                                                <div class="mb-details-kv-label">Automatic renewal</div>
-                                                                <div class="mb-details-kv-value">No</div>
-                                                            </div>
-                                                            <div class="mb-details-kv-row">
-                                                                <div class="mb-details-kv-label">Simple-account ID</div>
-                                                                <div class="mb-simple-id-value" style="margin-top: 4px;">F75C51F1 CF00 30BD 8A76 E9A277A84F</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="mb-asset-subcard">
-                                                    <div class="mb-assets-title">Liquid Cash Deposit</div>
-                                                    <div class="mb-assets-2grid">
-                                                        <div>
-                                                            <div class="mb-assets-grid-label mb-assets-grid-label--emph">Net balance</div>
-                                                            <div class="mb-assets-grid-value">$1,597,095.52</div>
-                                                        </div>
-                                                        <div>
-                                                            <div class="mb-assets-grid-label mb-assets-grid-label--emph">Yield</div>
-                                                            <div class="mb-assets-grid-value money-box-yield">↑ $458,416.60</div>
-                                                        </div>
-                                                    </div>
-                                                    <div style="margin-bottom: 0;">
-                                                        <div class="mb-assets-grid-label mb-assets-grid-label--emph">Interest rate</div>
-                                                        <div class="mb-assets-grid-value mb-assets-grid-value--meta">9.25%</div>
-                                                    </div>
-                                                    <button type="button" class="mb-details-trigger" style="margin-top: 12px;" onclick="var n=this.nextElementSibling; n.style.display=n.style.display==='none'?'block':'none';">
-                                                        <span><span aria-hidden="true">📄</span> Details</span>
-                                                        <span aria-hidden="true">›</span>
-                                                    </button>
-                                                    <div class="mb-details-nested" style="display: none;">
-                                                        <div class="mb-lcd-details-panel">
-                                                            <div class="mb-expand-panel-body">
-                                                                <div class="mb-simple-id-label">Simple-account ID</div>
-                                                                <div class="mb-simple-id-value">C8F1A204 91B3 4E7C A592 3D60184E7F22</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="money-box-card">
-                            <div class="money-box-header">
-                                <div class="money-box-icon money-box-icon-briefcase" aria-hidden="true">
-                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect x="6" y="9" width="12" height="9" rx="1.2" stroke="#757575" stroke-width="1.35" fill="none"/>
-                                        <path d="M9 9V8a2 2 0 012-2h2a2 2 0 012 2v1" stroke="#757575" stroke-width="1.35" fill="none" stroke-linecap="round"/>
-                                        <text x="12" y="17" text-anchor="middle" font-size="8.5" font-weight="700" fill="#555" font-family="system-ui, -apple-system, sans-serif">$</text>
-                                    </svg>
-                                </div>
-                                <div class="money-box-name">Emergencias</div>
-                            </div>
-                            <div class="money-box-info">
-                                <div class="money-box-info-row">
-                                    <span class="money-box-info-label">Total balance</span>
-                                    <span class="money-box-info-value">$0.00</span>
-                                </div>
-                                <div class="money-box-info-row">
-                                    <span class="money-box-info-label">Total yield</span>
-                                    <span class="money-box-info-value money-box-yield">↑ $14,871.40</span>
-                                </div>
-                                <div class="money-box-info-divider" aria-hidden="true"></div>
-                                <div class="money-box-info-row">
-                                    <span class="money-box-info-label">Available balance</span>
-                                    <span class="money-box-info-value">$0.00</span>
-                                </div>
-                            </div>
-                            <div class="money-box-card-actions">
-                                <div class="money-box-action-block">
-                                    <button type="button" class="money-box-action-btn money-box-action-btn-split" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none'">
-                                        <span class="money-box-action-btn-main"><span aria-hidden="true">📄</span> More information</span><span class="money-box-action-btn-chev" aria-hidden="true">›</span>
-                                    </button>
-                                    <div class="mb-expand-panel mb-expand-panel--body-only" style="display: none;">
-                                        <div class="mb-expand-panel-body">
-                                            <div class="mb-field-block">
-                                                <div class="mb-field-label">Creation date</div>
-                                                <div class="mb-field-value">10/26/2025, 23:54:33</div>
-                                            </div>
-                                            <div class="mb-field-block">
-                                                <div class="mb-field-label">Money Box ID</div>
-                                                <div class="mb-field-value">68fea6a9-a6c0-40c7-9d06-84c2e2d8ee08</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="money-box-action-block">
-                                    <button type="button" class="money-box-action-btn money-box-action-btn-split" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none'">
-                                        <span class="money-box-action-btn-main"><span aria-hidden="true">📊</span> Assets composition</span><span class="money-box-action-btn-chev" aria-hidden="true">›</span>
-                                    </button>
-                                    <div style="display: none; padding: 16px; background: #f9f9f9; border-radius: 8px; margin-top: 8px;">
-                                        <div class="mb-assets-inner">
-                                            <div class="mb-assets-title">Liquid Cash Deposit</div>
-                                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px;">
-                                                <div>
-                                                    <div class="mb-assets-grid-label">Net balance</div>
-                                                    <div class="mb-assets-grid-value">$0.00</div>
-                                                </div>
-                                                <div>
-                                                    <div class="mb-assets-grid-label">Yield</div>
-                                                    <div class="mb-assets-grid-value money-box-yield">↑ $881.32</div>
-                                                </div>
-                                            </div>
-                                            <div style="margin-bottom: 12px;">
-                                                <div class="mb-assets-grid-label">Interest rate</div>
-                                                <div class="mb-assets-grid-value mb-assets-grid-value--meta">9.25%</div>
-                                            </div>
-                                            <button type="button" class="mb-details-trigger" onclick="var n=this.nextElementSibling; n.style.display=n.style.display==='none'?'block':'none';">
-                                                <span><span aria-hidden="true">📄</span> Details</span>
-                                                <span aria-hidden="true">›</span>
-                                            </button>
-                                            <div class="mb-details-nested" style="display: none;">
-                                                <div class="mb-details-expanded-inner">
-                                                    <div class="mb-simple-id-label">Simple-account ID</div>
-                                                    <div class="mb-simple-id-value">68FEA6A9 FFBF 4C86 9B0F 186E36C3E3</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -21262,9 +20873,6 @@
                             <select class="money-boxes-toolbar-select filter-dropdown mb-transactions-mb-select" aria-label="Seleccionar cajita">
                                 <option value="" selected disabled>Seleccionar una cajita</option>
                                 <option value="ahorros">Ahorros</option>
-                                <option value="mi-primera">Mi primera Cajita</option>
-                                <option value="prestaciones">Prestaciones sociales</option>
-                                <option value="emergencias">Emergencias</option>
                             </select>
                         </div>
                         <div class="mb-transactions-detail" style="display: none;">
@@ -22447,11 +22055,11 @@
                             <div class="money-box-totals-title">Money Boxes</div>
                             <div class="money-box-info-row">
                                 <span class="money-box-info-label">Total balance</span>
-                                <span class="money-box-info-value">$4,499,701.80</span>
+                                <span class="money-box-info-value">$0</span>
                             </div>
                             <div class="money-box-info-row">
                                 <span class="money-box-info-label">Total yield</span>
-                                <span class="money-box-info-value money-box-yield">↑ $513,704.52</span>
+                                <span class="money-box-info-value money-box-yield">$50.98</span>
                             </div>
                         </div>
                     </div>
@@ -22557,7 +22165,7 @@
 
                             <div class="prometheus-field">
                                 <label class="prometheus-label">CUSTOMER ID</label>
-                                <div class="prometheus-id-value">632b3f5e-b8e9-45c4-a483-e7</div>
+                                <div class="prometheus-id-value">a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6</div>
                             </div>
                         </div>
                         <div class="prometheus-footer-visual" aria-hidden="true">
@@ -23120,7 +22728,7 @@
                                 <div class="account-widget2-financial-grid">
                                     <div>
                                         <div class="account-section-label">AVAILABLE BALANCE</div>
-                                        <div id="accountAvailableBalanceDisplay" class="account-widget2-financial-value" data-balance-amount="3281.71">$ 3.281,71</div>
+                                        <div id="accountAvailableBalanceDisplay" class="account-widget2-financial-value" data-balance-amount="0">$ 0,00</div>
                                     </div>
                                     <div>
                                         <div class="account-section-label">YIELD IN THE CURRENT MONTH</div>
@@ -23612,21 +23220,9 @@
                                     <div class="loans-card-row">
                                         <input type="checkbox" class="loans-card-checkbox" aria-label="Selecionar empréstimo" onclick="event.stopPropagation();">
                                         <div class="loans-card-middle">
-                                            <div class="loans-card-title">
-                                                <span class="loans-card-title-line">Dinheiro do</span>
-                                                <span class="loans-card-title-line">empréstimo</span>
-                                            </div>
-                                            <div class="loans-card-status">
-                                                <div class="loans-card-status-inner">
-                                                    <div class="loans-card-status-line1">
-                                                        <span class="loans-card-label-type">SMALL AMOUNT</span>
-                                                        <span class="loans-card-label-active">ACTIVE</span>
-                                                    </div>
-                                                    <div class="loans-card-status-line2">
-                                                        <span class="loans-card-label-loan">LOAN</span>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                            <div class="loans-card-title">Dinheiro do empréstimo</div>
+                                            <div class="loans-card-product-type">PERSONAL LOAN</div>
+                                            <div class="loans-card-state-paid">PAID</div>
                                         </div>
                                     </div>
                                 </div>
@@ -24134,7 +23730,7 @@
                                             <span class="cca-lbl">Total Balance</span>
                                         </div>
                                         <div class="cca-val-line">
-                                            <span class="cca-val" data-cca-balance-check="1">$ 10.044.153,57</span>
+                                            <span class="cca-val" data-cca-balance-check="1">$ 0,00</span>
                                             <button type="button" class="cca-copy account-copy-btn" aria-label="Copy"><svg class="cca-copy-icon" width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="2" width="9" height="9" rx="1.25" fill="none" stroke="currentColor" stroke-width="1.25"/><rect x="5" y="5" width="9" height="9" rx="1.25" fill="none" stroke="currentColor" stroke-width="1.25"/></svg></button>
                                         </div>
                                     </div>
@@ -24144,7 +23740,7 @@
                                             <span class="cca-lbl">Future Balance</span>
                                         </div>
                                         <div class="cca-val-line">
-                                            <span class="cca-val" data-cca-balance-check="1">$ 8.647.116,15</span>
+                                            <span class="cca-val" data-cca-balance-check="1">$ 0,00</span>
                                             <button type="button" class="cca-copy account-copy-btn" aria-label="Copy"><svg class="cca-copy-icon" width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="2" width="9" height="9" rx="1.25" fill="none" stroke="currentColor" stroke-width="1.25"/><rect x="5" y="5" width="9" height="9" rx="1.25" fill="none" stroke="currentColor" stroke-width="1.25"/></svg></button>
                                         </div>
                                     </div>
@@ -24154,7 +23750,7 @@
                                             <span class="cca-lbl">Open Balance</span>
                                         </div>
                                         <div class="cca-val-line">
-                                            <span class="cca-val" data-cca-balance-check="1">$ 576.439,89</span>
+                                            <span class="cca-val" data-cca-balance-check="1">$ 0,00</span>
                                             <button type="button" class="cca-copy account-copy-btn" aria-label="Copy"><svg class="cca-copy-icon" width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="2" width="9" height="9" rx="1.25" fill="none" stroke="currentColor" stroke-width="1.25"/><rect x="5" y="5" width="9" height="9" rx="1.25" fill="none" stroke="currentColor" stroke-width="1.25"/></svg></button>
                                         </div>
                                     </div>
@@ -24164,7 +23760,7 @@
                                             <span class="cca-lbl">Due Balance</span>
                                         </div>
                                         <div class="cca-val-line">
-                                            <span class="cca-val" data-cca-balance-check="1">$ 820.597,53</span>
+                                            <span class="cca-val" data-cca-balance-check="1">$ 0,00</span>
                                             <button type="button" class="cca-copy account-copy-btn" aria-label="Copy"><svg class="cca-copy-icon" width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="2" width="9" height="9" rx="1.25" fill="none" stroke="currentColor" stroke-width="1.25"/><rect x="5" y="5" width="9" height="9" rx="1.25" fill="none" stroke="currentColor" stroke-width="1.25"/></svg></button>
                                         </div>
                                     </div>
@@ -24174,7 +23770,7 @@
                                             <span class="cca-lbl">Minimum to Cure</span>
                                         </div>
                                         <div class="cca-val-line">
-                                            <span class="cca-val" data-cca-balance-check="1">-</span>
+                                            <span class="cca-val" data-cca-balance-check="1">$ 0,00</span>
                                             <button type="button" class="cca-copy account-copy-btn" aria-label="Copy"><svg class="cca-copy-icon" width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="2" width="9" height="9" rx="1.25" fill="none" stroke="currentColor" stroke-width="1.25"/><rect x="5" y="5" width="9" height="9" rx="1.25" fill="none" stroke="currentColor" stroke-width="1.25"/></svg></button>
                                         </div>
                                     </div>
@@ -24247,14 +23843,14 @@
                                 <div class="cca-block">
                                     <div class="cca-lbl" style="margin-bottom:4px;">Credit Available Limit</div>
                                     <div class="cca-val-line">
-                                        <span class="cca-val">-$ 144.153,57</span>
+                                        <span class="cca-val">$ 9.900.000,00</span>
                                         <button type="button" class="cca-copy account-copy-btn" aria-label="Copy"><svg class="cca-copy-icon" width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="2" width="9" height="9" rx="1.25" fill="none" stroke="currentColor" stroke-width="1.25"/><rect x="5" y="5" width="9" height="9" rx="1.25" fill="none" stroke="currentColor" stroke-width="1.25"/></svg></button>
                                     </div>
                                 </div>
                                 <div class="cca-block">
                                     <div class="cca-lbl" style="margin-bottom:4px;">Withdrawal Available Limit</div>
                                     <div class="cca-val-line">
-                                        <span class="cca-val cca-withdraw-val">-$ 144.153,57</span>
+                                        <span class="cca-val cca-withdraw-val">$ 2.700.000,00</span>
                                         <button type="button" class="cca-copy account-copy-btn" aria-label="Copy"><svg class="cca-copy-icon" width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="2" width="9" height="9" rx="1.25" fill="none" stroke="currentColor" stroke-width="1.25"/><rect x="5" y="5" width="9" height="9" rx="1.25" fill="none" stroke="currentColor" stroke-width="1.25"/></svg></button>
                                     </div>
                                 </div>
@@ -24369,69 +23965,8 @@
                     </div>
                     <div class="widget-content" id="billsContent2">
                         <div class="bills-list">
-                            <!-- SEP 2026 -->
-                            <div class="bill-item" onclick="openBillDetail(0)">
-                                <div class="bill-month-box" style="background: #D99A50;">SEP 2026</div>
-                                <div class="bill-details">
-                                    <div class="bill-grid-row">
-                                        <span class="bill-lbl">Close Date</span>
-                                        <span class="bill-lbl">Due Date</span>
-                                    </div>
-                                    <div class="bill-grid-row bill-grid-row--values">
-                                        <span class="bill-val">12 AGO 2026</span>
-                                        <span class="bill-val">01 SEP</span>
-                                    </div>
-                                    <div class="bill-grid-row bill-grid-row--span1 bill-grid-row--payment-lbl">
-                                        <span class="bill-lbl bill-lbl--block">Minimum estimated payment</span>
-                                    </div>
-                                    <div class="bill-grid-row bill-grid-row--span1 bill-grid-row--values">
-                                        <span class="bill-amt">$ 498.296,65</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- AGO 2026 -->
-                            <div class="bill-item" onclick="openBillDetail(1)">
-                                <div class="bill-month-box" style="background: #D99A50;">AGO 2026</div>
-                                <div class="bill-details">
-                                    <div class="bill-grid-row">
-                                        <span class="bill-lbl">Close Date</span>
-                                        <span class="bill-lbl">Due Date</span>
-                                    </div>
-                                    <div class="bill-grid-row bill-grid-row--values">
-                                        <span class="bill-val">12 JUL 2026</span>
-                                        <span class="bill-val">01 AGO (03 AGO)</span>
-                                    </div>
-                                    <div class="bill-grid-row bill-grid-row--span1 bill-grid-row--payment-lbl">
-                                        <span class="bill-lbl bill-lbl--block">Minimum estimated payment</span>
-                                    </div>
-                                    <div class="bill-grid-row bill-grid-row--span1 bill-grid-row--values">
-                                        <span class="bill-amt">$ 514.459,15</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- JUL 2026 -->
-                            <div class="bill-item" onclick="openBillDetail(2)">
-                                <div class="bill-month-box" style="background: #D99A50;">JUL 2026</div>
-                                <div class="bill-details">
-                                    <div class="bill-grid-row">
-                                        <span class="bill-lbl">Close Date</span>
-                                        <span class="bill-lbl">Due Date</span>
-                                    </div>
-                                    <div class="bill-grid-row bill-grid-row--values">
-                                        <span class="bill-val">11 JUN 2026</span>
-                                        <span class="bill-val">01 JUL</span>
-                                    </div>
-                                    <div class="bill-grid-row bill-grid-row--span1 bill-grid-row--payment-lbl">
-                                        <span class="bill-lbl bill-lbl--block">Minimum estimated payment</span>
-                                    </div>
-                                    <div class="bill-grid-row bill-grid-row--span1 bill-grid-row--values">
-                                        <span class="bill-amt">$ 540.514,15</span>
-                                    </div>
-                                </div>
-                            </div>
                             <!-- JUN 2026 -->
-                            <div class="bill-item" onclick="openBillDetail(3)">
+                            <div class="bill-item" onclick="openBillDetail(0)">
                                 <div class="bill-month-box" style="background: #69B3C2;">JUN 2026</div>
                                 <div class="bill-details">
                                     <div class="bill-grid-row">
@@ -24446,12 +23981,12 @@
                                         <span class="bill-lbl bill-lbl--block">Minimum estimated payment</span>
                                     </div>
                                     <div class="bill-grid-row bill-grid-row--span1 bill-grid-row--values">
-                                        <span class="bill-amt">$ 576.439,89</span>
+                                        <span class="bill-amt">$ 0,00</span>
                                     </div>
                                 </div>
                             </div>
                             <!-- MAY 2026 -->
-                            <div class="bill-item bill-item--dual" onclick="openBillDetail(4)">
+                            <div class="bill-item bill-item--dual" onclick="openBillDetail(1)">
                                 <div class="bill-month-box" style="background: #D8756A;">MAY 2026</div>
                                 <div class="bill-details">
                                     <div class="bill-grid-row">
@@ -24473,7 +24008,7 @@
                                 </div>
                             </div>
                             <!-- ABR 2026 -->
-                            <div class="bill-item bill-item--dual" onclick="openBillDetail(5)">
+                            <div class="bill-item bill-item--dual" onclick="openBillDetail(2)">
                                 <div class="bill-month-box" style="background: #9BCB45;">ABR 2026</div>
                                 <div class="bill-details">
                                     <div class="bill-grid-row">
@@ -24495,7 +24030,7 @@
                                 </div>
                             </div>
                             <!-- MAR 2026 -->
-                            <div class="bill-item bill-item--dual" onclick="openBillDetail(6)">
+                            <div class="bill-item bill-item--dual" onclick="openBillDetail(3)">
                                 <div class="bill-month-box" style="background: #9BCB45;">MAR 2026</div>
                                 <div class="bill-details">
                                     <div class="bill-grid-row">
@@ -24517,7 +24052,7 @@
                                 </div>
                             </div>
                             <!-- FEB 2026 -->
-                            <div class="bill-item bill-item--dual" onclick="openBillDetail(7)">
+                            <div class="bill-item bill-item--dual" onclick="openBillDetail(4)">
                                 <div class="bill-month-box" style="background: #9BCB45;">FEB 2026</div>
                                 <div class="bill-details">
                                     <div class="bill-grid-row">
@@ -24539,7 +24074,7 @@
                                 </div>
                             </div>
                             <!-- ENE 2026 -->
-                            <div class="bill-item bill-item--dual" onclick="openBillDetail(8)">
+                            <div class="bill-item bill-item--dual" onclick="openBillDetail(5)">
                                 <div class="bill-month-box" style="background: #9BCB45;">ENE 2026</div>
                                 <div class="bill-details">
                                     <div class="bill-grid-row">
@@ -24561,7 +24096,7 @@
                                 </div>
                             </div>
                             <!-- DIC 2025 -->
-                            <div class="bill-item bill-item--dual" onclick="openBillDetail(9)">
+                            <div class="bill-item bill-item--dual" onclick="openBillDetail(6)">
                                 <div class="bill-month-box" style="background: #9BCB45;">DIC 2025</div>
                                 <div class="bill-details">
                                     <div class="bill-grid-row">
@@ -24583,7 +24118,7 @@
                                 </div>
                             </div>
                             <!-- NOV 2025 -->
-                            <div class="bill-item bill-item--dual" onclick="openBillDetail(10)">
+                            <div class="bill-item bill-item--dual" onclick="openBillDetail(7)">
                                 <div class="bill-month-box" style="background: #9BCB45;">NOV 2025</div>
                                 <div class="bill-details">
                                     <div class="bill-grid-row">
@@ -25836,7 +25371,7 @@
         <button type="button" class="toast-person-url-close" onclick="closeCancelSavingsFailureToast()" aria-label="Cerrar">×</button>
     </div>
 
-    <!-- Chat modal: conversación savings.account_cancellation (Carlos / Pepito) -->
+    <!-- Chat modal: conversación savings.account_cancellation (Martha Lucía / Pepito) -->
     <div class="modal-overlay" id="savingsChatModal" style="display: none; align-items: center; justify-content: center;">
         <div class="chat-modal-box">
             <div class="chat-modal-header">
@@ -25852,11 +25387,11 @@
                 </div>
                 <div class="chat-msg chat-msg--right">
                     <div class="chat-msg-sender">Equipo Nu</div>
-                    <div class="chat-msg-bubble">¡Hola, Carlos! Gracias por estar aquí. Por favor, dinos en un solo mensaje cómo te podemos ayudar, eso nos permitirá atenderte mejor y más rápido.</div>
+                    <div class="chat-msg-bubble">¡Hola, Martha Lucía! Gracias por estar aquí. Por favor, dinos en un solo mensaje cómo te podemos ayudar, eso nos permitirá atenderte mejor y más rápido.</div>
                     <div class="chat-msg-time">9:35 AM</div>
                 </div>
                 <div class="chat-msg chat-msg--left">
-                    <div class="chat-msg-sender">Carlos</div>
+                    <div class="chat-msg-sender">Martha Lucía</div>
                     <div class="chat-msg-bubble">Buen día. Deseo cancelar todos mis productos con Nu</div>
                     <div class="chat-msg-time">9:35 AM</div>
                 </div>
@@ -25867,7 +25402,7 @@
                 </div>
                 <div class="chat-msg chat-msg--right">
                     <div class="chat-msg-sender">Pepito</div>
-                    <div class="chat-msg-bubble">Hola Carlos, espero que estés muy bien. Muchas gracias por contactarte. Hablas con Pepito del equipo Nu y voy a estar apoyándote el día de hoy para así resolver tus inquietudes. 💜</div>
+                    <div class="chat-msg-bubble">Hola Martha Lucía, espero que estés muy bien. Muchas gracias por contactarte. Hablas con Pepito del equipo Nu y voy a estar apoyándote el día de hoy para así resolver tus inquietudes. 💜</div>
                     <div class="chat-msg-time">9:38 AM</div>
                 </div>
                 <div class="chat-msg chat-msg--right">
@@ -25876,7 +25411,7 @@
                     <div class="chat-msg-time">9:38 AM</div>
                 </div>
                 <div class="chat-msg chat-msg--left">
-                    <div class="chat-msg-sender">Carlos</div>
+                    <div class="chat-msg-sender">Martha Lucía</div>
                     <div class="chat-msg-bubble">Muy bien Pepito y tú?</div>
                     <div class="chat-msg-time">9:39 AM</div>
                 </div>
@@ -25896,7 +25431,7 @@
                     <div class="chat-msg-time">9:40 AM</div>
                 </div>
                 <div class="chat-msg chat-msg--left">
-                    <div class="chat-msg-sender">Carlos</div>
+                    <div class="chat-msg-sender">Martha Lucía</div>
                     <div class="chat-msg-bubble">Muchas gracias.
 Aquí estaré</div>
                     <div class="chat-msg-time">9:41 AM</div>
@@ -25907,7 +25442,7 @@ Aquí estaré</div>
                     <div class="chat-msg-time">9:41 AM</div>
                 </div>
                 <div class="chat-msg chat-msg--left">
-                    <div class="chat-msg-sender">Carlos</div>
+                    <div class="chat-msg-sender">Martha Lucía</div>
                     <div class="chat-msg-bubble">Cédula 1234567890</div>
                     <div class="chat-msg-time">9:42 AM</div>
                 </div>
@@ -25917,8 +25452,8 @@ Aquí estaré</div>
                     <div class="chat-msg-time">9:42 AM</div>
                 </div>
                 <div class="chat-msg chat-msg--left">
-                    <div class="chat-msg-sender">Carlos</div>
-                    <div class="chat-msg-bubble">14/05/1988</div>
+                    <div class="chat-msg-sender">Martha Lucía</div>
+                    <div class="chat-msg-bubble">22/11/1975</div>
                     <div class="chat-msg-time">9:43 AM</div>
                 </div>
                 <div class="chat-msg chat-msg--right">
@@ -25927,7 +25462,7 @@ Aquí estaré</div>
                     <div class="chat-msg-time">9:43 AM</div>
                 </div>
                 <div class="chat-msg chat-msg--left">
-                    <div class="chat-msg-sender">Carlos</div>
+                    <div class="chat-msg-sender">Martha Lucía</div>
                     <div class="chat-msg-bubble">Necesito tener libre mi capacidad de endeudamiento</div>
                     <div class="chat-msg-time">9:44 AM</div>
                 </div>
@@ -25956,7 +25491,7 @@ https://nu.com.co/cf/cuenta-condiciones/
                     <div class="chat-msg-time">9:45 AM</div>
                 </div>
                 <div class="chat-msg chat-msg--left">
-                    <div class="chat-msg-sender">Carlos</div>
+                    <div class="chat-msg-sender">Martha Lucía</div>
                     <div class="chat-msg-bubble">No Pepito, te agradezco mucho. Deseo continuar el proceso de cancelación de todos mis productos Nu</div>
                     <div class="chat-msg-time">9:47 AM</div>
                 </div>
@@ -25975,7 +25510,7 @@ Dicho lo anterior, ¿estás de acuerdo con las condiciones de cancelación?
                     <div class="chat-msg-time">9:50 AM</div>
                 </div>
                 <div class="chat-msg chat-msg--left">
-                    <div class="chat-msg-sender">Carlos</div>
+                    <div class="chat-msg-sender">Martha Lucía</div>
                     <div class="chat-msg-bubble">Sí</div>
                     <div class="chat-msg-time">9:51 AM</div>
                 </div>
@@ -25990,7 +25525,7 @@ Dicho lo anterior, ¿estás de acuerdo con las condiciones de cancelación?
                     <div class="chat-msg-time">9:51 AM</div>
                 </div>
                 <div class="chat-msg chat-msg--left">
-                    <div class="chat-msg-sender">Carlos</div>
+                    <div class="chat-msg-sender">Martha Lucía</div>
                     <div class="chat-msg-bubble">Sí</div>
                     <div class="chat-msg-time">9:55 AM</div>
                 </div>
@@ -26006,7 +25541,7 @@ Para completar la cancelación, te agradecemos transferir únicamente $1 peso ex
                     <div class="chat-msg-time">9:57 AM</div>
                 </div>
                 <div class="chat-msg chat-msg--left">
-                    <div class="chat-msg-sender">Carlos</div>
+                    <div class="chat-msg-sender">Martha Lucía</div>
                     <div class="chat-msg-bubble">Hecho, solo deja transferir $1</div>
                     <div class="chat-msg-time">10:01 AM</div>
                 </div>
@@ -26016,7 +25551,7 @@ Para completar la cancelación, te agradecemos transferir únicamente $1 peso ex
                     <div class="chat-msg-time">10:04 AM</div>
                 </div>
                 <div class="chat-msg chat-msg--left">
-                    <div class="chat-msg-sender">Carlos</div>
+                    <div class="chat-msg-sender">Martha Lucía</div>
                     <div class="chat-msg-bubble">Sí</div>
                     <div class="chat-msg-time">10:04 AM</div>
                 </div>
@@ -26081,7 +25616,7 @@ Recuerda que estamos disponibles 24/7 para apoyarte en lo que necesites. Un abra
         </div>
     </div>
 
-    <!-- Chat modal: conversación others.documents (Carlos / Pepito P.) -->
+    <!-- Chat modal: conversación others.documents (Martha Lucía / Pepito P.) -->
     <div class="modal-overlay" id="documentsChatModal" style="display: none; align-items: center; justify-content: center;">
         <div class="chat-modal-box">
             <div class="chat-modal-header">
@@ -26097,11 +25632,11 @@ Recuerda que estamos disponibles 24/7 para apoyarte en lo que necesites. Un abra
                 </div>
                 <div class="chat-msg chat-msg--right">
                     <div class="chat-msg-sender">Equipo Nu</div>
-                    <div class="chat-msg-bubble">¡Hola, Carlos! Gracias por estar aquí. Por favor, dinos en un solo mensaje cómo te podemos ayudar, eso nos permitirá atenderte mejor y más rápido.</div>
+                    <div class="chat-msg-bubble">¡Hola, Martha Lucía! Gracias por estar aquí. Por favor, dinos en un solo mensaje cómo te podemos ayudar, eso nos permitirá atenderte mejor y más rápido.</div>
                     <div class="chat-msg-time">4:02 PM</div>
                 </div>
                 <div class="chat-msg chat-msg--left">
-                    <div class="chat-msg-sender">Carlos</div>
+                    <div class="chat-msg-sender">Martha Lucía</div>
                     <div class="chat-msg-bubble">Requiero un certificado de la compra del 4 de marzo por 34.500 con mi TC</div>
                     <div class="chat-msg-time">4:04 PM</div>
                 </div>
@@ -26129,7 +25664,7 @@ Si necesitas más ayuda, no dudes en decírmelo.</div>
                     <div class="chat-msg-time">4:06 PM</div>
                 </div>
                 <div class="chat-msg chat-msg--left">
-                    <div class="chat-msg-sender">Carlos</div>
+                    <div class="chat-msg-sender">Martha Lucía</div>
                     <div class="chat-msg-bubble">No</div>
                     <div class="chat-msg-time">4:06 PM</div>
                 </div>
@@ -26140,7 +25675,7 @@ Si necesitas más ayuda, no dudes en decírmelo.</div>
                 </div>
                 <div class="chat-msg chat-msg--right">
                     <div class="chat-msg-sender">Pepito P.</div>
-                    <div class="chat-msg-bubble">¡Hola, Carlos! ¡Bienvenido al equipo Nu! Espero que te encuentres muy bien. Mi nombre es Pepito y estaré para guiarte en tus dudas el día de hoy. ✨
+                    <div class="chat-msg-bubble">¡Hola, Martha Lucía! ¡Bienvenido al equipo Nu! Espero que te encuentres muy bien. Mi nombre es Pepito y estaré para guiarte en tus dudas el día de hoy. ✨
 
 Veo que te contactas porque quieres un certificado de la transacción que realizaste el día 4 de marzo por 34.500, con gusto te ayudaré en este proceso.</div>
                     <div class="chat-msg-time">4:09 PM</div>
@@ -26151,13 +25686,13 @@ Veo que te contactas porque quieres un certificado de la transacción que realiz
                     <div class="chat-msg-time">4:09 PM</div>
                 </div>
                 <div class="chat-msg chat-msg--left">
-                    <div class="chat-msg-sender">Carlos</div>
+                    <div class="chat-msg-sender">Martha Lucía</div>
                     <div class="chat-msg-bubble">Hola, Pepito, bien y tú?</div>
                     <div class="chat-msg-time">4:10 PM</div>
                 </div>
                 <div class="chat-msg chat-msg--right">
                     <div class="chat-msg-sender">Pepito P.</div>
-                    <div class="chat-msg-bubble">Carlos, me alegro que te encuentres bien, yo estoy genial, gracias por preguntar y preocuparte.</div>
+                    <div class="chat-msg-bubble">Martha Lucía, me alegro que te encuentres bien, yo estoy genial, gracias por preguntar y preocuparte.</div>
                     <div class="chat-msg-time">4:11 PM</div>
                 </div>
                 <div class="chat-msg chat-msg--right">
@@ -26177,7 +25712,7 @@ Abre «Mis casos» donde podrás ver todos los reportes efectuados; seleccionar�
                     <div class="chat-msg-time">4:11 PM</div>
                 </div>
                 <div class="chat-msg chat-msg--left">
-                    <div class="chat-msg-sender">Carlos</div>
+                    <div class="chat-msg-sender">Martha Lucía</div>
                     <div class="chat-msg-bubble">Gracias Pepito, sería todo 💜</div>
                     <div class="chat-msg-time">4:12 PM</div>
                 </div>
@@ -26192,7 +25727,7 @@ Abre «Mis casos» donde podrás ver todos los reportes efectuados; seleccionar�
                     <div class="chat-msg-time">4:13 PM</div>
                 </div>
                 <div class="chat-msg chat-msg--left">
-                    <div class="chat-msg-sender">Carlos</div>
+                    <div class="chat-msg-sender">Martha Lucía</div>
                     <div class="chat-msg-bubble">Solo era eso, muchas gracias</div>
                     <div class="chat-msg-time">4:13 PM</div>
                 </div>
@@ -26247,7 +25782,7 @@ Un abrazo, equipo Nu. 💜</div>
         </div>
     </div>
 
-    <!-- Modal Email: certificado Nu (remitente Pepito → Carlos) -->
+    <!-- Modal Email: certificado Nu (remitente Pepito → Martha Lucía) -->
     <div class="modal-overlay" id="certificateEmailModal" style="display: none; align-items: center; justify-content: center;">
         <div class="email-modal-box">
             <div class="chat-modal-header">
@@ -26270,7 +25805,7 @@ Un abrazo, equipo Nu. 💜</div>
                     </div>
                 </div>
                 <div class="email-body-card">
-                    <p>Hola, Carlos.</p>
+                    <p>Hola, Martha Lucía.</p>
                     <p>Te hablamos de Nu.</p>
                     <p>Esperamos que te encuentres muy bien el día de hoy.</p>
                     <p>De acuerdo a tu solicitud, te compartimos adjunto el certificado que nos solicitaste.</p>
@@ -26278,7 +25813,7 @@ Un abrazo, equipo Nu. 💜</div>
                     <p>Un abrazo,<br>Equipo Nu</p>
                     <div class="email-attachment-row">
                         <span class="email-attach-icon" aria-hidden="true">📄</span>
-                        <span>Certificado de transacción aprobada - Carlos Andrés Rojas Peña.pdf</span>
+                        <span>Certificado de transacción aprobada - Martha Lucía Gómez Ruiz.pdf</span>
                     </div>
                 </div>
             </div>
@@ -26292,7 +25827,7 @@ Un abrazo, equipo Nu. 💜</div>
             <button type="button" onclick="previousProfilePhoto()" aria-label="Foto anterior" style="position: absolute; left: 12px; top: 50%; transform: translateY(-50%); background: rgba(124,77,188,0.9); color: white; border: none; border-radius: 50%; width: 48px; height: 48px; font-size: 28px; cursor: pointer; display: flex; align-items: center; justify-content: center; z-index: 10;">‹</button>
             <button type="button" onclick="nextProfilePhoto()" aria-label="Foto siguiente" style="position: absolute; right: 12px; top: 50%; transform: translateY(-50%); background: rgba(124,77,188,0.9); color: white; border: none; border-radius: 50%; width: 48px; height: 48px; font-size: 28px; cursor: pointer; display: flex; align-items: center; justify-content: center; z-index: 10;">›</button>
             <div id="profilePhotoViewerGrid" style="width: 70vmin; height: 70vmin; max-width: 70vw; max-height: 60vh; overflow: hidden; display: flex; align-items: center; justify-content: center; margin: 20px 0; flex-shrink: 0;">
-                <img id="profilePhotoModalImage" src="images/Carlos.png" alt="Foto de perfil" style="max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; transition: transform 0.3s ease;">
+                <img id="profilePhotoModalImage" src="images/Martha.png" alt="Foto de perfil" style="max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; transition: transform 0.3s ease;">
             </div>
             <div style="display: flex; gap: 12px; margin-top: 8px; position: relative; z-index: 5; background: #f5f5f5; padding: 8px 0;">
                 <button type="button" onclick="rotateProfilePhoto()" style="background: rgba(124,77,188,0.9); color: white; border: none; border-radius: 50%; width: 44px; height: 44px; font-size: 22px; cursor: pointer; display: flex; align-items: center; justify-content: center; flex-shrink: 0;" title="Girar imagen 90°">⟳</button>
@@ -26466,7 +26001,7 @@ Un abrazo, equipo Nu. 💜</div>
                     <!-- Firma -->
                     <div style="margin-top: 35px; padding-top: 25px; border-top: 2px solid rgba(90,108,125,0.15); position: relative;">
                         <div style="color: #4a5568; font-size: 10px; font-weight: 600; margin-bottom: 8px;">Firma</div>
-                        <div style="font-family: 'Brush Script MT', 'Lucida Handwriting', cursive; font-size: 28px; color: #1a1a1a; font-weight: 400;">Carlos Macedo Florez</div>
+                        <div style="font-family: 'Brush Script MT', 'Lucida Handwriting', cursive; font-size: 28px; color: #1a1a1a; font-weight: 400;">Martha Lucía Gómez Ruiz</div>
                     </div>
                     
                     <!-- Butterfly -->
@@ -26950,7 +26485,7 @@ Un abrazo, equipo Nu. 💜</div>
                 </div>
                 <div class="notifications-item notifications-item--clickable" data-notification-channel="email" data-notification-status="received" role="button" tabindex="0" onclick="openNotificationDetailPanel('cuenta-nu-stadium-email', event)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openNotificationDetailPanel('cuenta-nu-stadium-email', event);}">
                     <div class="notifications-dot" aria-hidden="true"><svg viewBox="0 0 24 24" width="9" height="9" fill="#fff" aria-hidden="true"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></div>
-                    <div class="notifications-item-title" data-tooltip="Tu Cuenta Nu te puede llevar al Nu Stadium, Carlos">Tu Cuenta Nu te puede llevar al Nu…</div>
+                    <div class="notifications-item-title" data-tooltip="Tu Cuenta Nu te puede llevar al Nu Stadium, Martha Lucía">Tu Cuenta Nu te puede llevar al Nu…</div>
                     <div class="notifications-item-meta"><span>Received</span><span class="notifications-item-time">20/03 16:33</span></div>
                 </div>
                 <div class="notifications-item notifications-item--clickable" data-notification-channel="push" data-notification-status="sent-not-received" role="button" tabindex="0" onclick="openNotificationDetailPanel('nuevo-avances-cuenta', event)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openNotificationDetailPanel('nuevo-avances-cuenta', event);}">
@@ -26965,7 +26500,7 @@ Un abrazo, equipo Nu. 💜</div>
                 </div>
                 <div class="notifications-item notifications-item--clickable" data-notification-channel="email" data-notification-status="received" role="button" tabindex="0" onclick="openNotificationDetailPanel('extracto-cuenta-nu-email', event)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openNotificationDetailPanel('extracto-cuenta-nu-email', event);}">
                     <div class="notifications-dot" aria-hidden="true"><svg viewBox="0 0 24 24" width="9" height="9" fill="#fff" aria-hidden="true"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></div>
-                    <div class="notifications-item-title" data-tooltip="El extracto de tu Cuenta Nu ya está aquí, Carlos">El extracto de tu Cuenta Nu ya est…</div>
+                    <div class="notifications-item-title" data-tooltip="El extracto de tu Cuenta Nu ya está aquí, Martha Lucía">El extracto de tu Cuenta Nu ya est…</div>
                     <div class="notifications-item-meta"><span>Received</span><span class="notifications-item-time">20/03 08:25</span></div>
                 </div>
             </div>
@@ -27833,7 +27368,7 @@ Un abrazo, equipo Nu. 💜</div>
     <template id="notificationDetailTplCuentaNuStadiumEmail">
             <div class="notification-detail-summary">
                 <div class="notifications-dot" aria-hidden="true"><svg viewBox="0 0 24 24" width="9" height="9" fill="#fff" aria-hidden="true"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></div>
-                <div class="notification-detail-summary-text" data-tooltip="Tu Cuenta Nu te puede llevar al Nu Stadium, Carlos">Tu Cuenta Nu te puede llevar al Nu Stadi…</div>
+                <div class="notification-detail-summary-text" data-tooltip="Tu Cuenta Nu te puede llevar al Nu Stadium, Martha Lucía">Tu Cuenta Nu te puede llevar al Nu Stadi…</div>
             </div>
             <div class="notification-detail-status-box">
                 <div class="notification-detail-label">Status</div>
@@ -27876,7 +27411,7 @@ Un abrazo, equipo Nu. 💜</div>
                     <p style="margin:12px 0 0;font-size:12px;opacity:.95;">Un mundo Nu es un mundo donde mover tu dinero te lleva lejos.</p>
                 </div>
                 <div class="nu-email-body-light">
-                    <p><strong>Hola, Carlos:</strong></p>
+                    <p><strong>Hola, Martha Lucía:</strong></p>
                     <p>Un mundo Nu es un mundo donde mover tu dinero te lleva lejos. <span class="nu-highlight">Del 20 al 26 de marzo, el cliente que más transaccione con su Cuenta Nu gana un viaje a Miami (Bogotá–Miami–Bogotá) + 1 boleta VIP para la inauguración del Nu Stadium y ver al Inter Miami CF en vivo.</span> ✈️⚽</p>
                     <div class="nu-email-card">
                         <h4>¿Qué tienes que hacer?</h4>
@@ -27913,7 +27448,7 @@ Un abrazo, equipo Nu. 💜</div>
     <template id="notificationDetailTplExtractoCuentaNuEmail">
             <div class="notification-detail-summary">
                 <div class="notifications-dot" aria-hidden="true"><svg viewBox="0 0 24 24" width="9" height="9" fill="#fff" aria-hidden="true"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></div>
-                <div class="notification-detail-summary-text" data-tooltip="El extracto de tu Cuenta Nu ya está aquí, Carlos">El extracto de tu Cuenta Nu ya est…</div>
+                <div class="notification-detail-summary-text" data-tooltip="El extracto de tu Cuenta Nu ya está aquí, Martha Lucía">El extracto de tu Cuenta Nu ya est…</div>
             </div>
             <div class="notification-detail-status-box">
                 <div class="notification-detail-label">Status</div>
@@ -27954,7 +27489,7 @@ Un abrazo, equipo Nu. 💜</div>
                     <h3 style="margin:0;font-size:17px;font-weight:800;line-height:1.3;">El extracto de tu Cuenta Nu ya está aquí</h3>
                 </div>
                 <div class="nu-email-body-light">
-                    <p><strong>Hola, Carlos:</strong></p>
+                    <p><strong>Hola, Martha Lucía:</strong></p>
                     <p>En Nu queremos que tengas en todo momento el control de tu dinero y darte información clara sobre tu cuenta.</p>
                     <p><strong>Encontrarás tu extracto de febrero del 2026 adjunto.</strong></p>
                     <p class="nu-highlight" style="margin-top:14px;">Para visualizarlo utiliza tu número de cédula.</p>
@@ -27968,6 +27503,83 @@ Un abrazo, equipo Nu. 💜</div>
                     <p><a href="#" onclick="return false;"><strong>Política de Privacidad Nu</strong></a></p>
                     <p style="margin-top:14px;opacity:.85;">Nu C.F. hace parte de Nubank - NIT 901.658.107-2<br>© Nu Colombia Compañía de Financiamiento S.A. 2025</p>
                     <p style="margin-top:10px;font-size:10px;opacity:.75;">VIGILADO SUPERINTENDENCIA FINANCIERA DE COLOMBIA · Fogafín</p>
+                </div>
+            </div>
+    </template>
+
+    <template id="notificationDetailTplSavingsAccountCancellationEmail">
+            <div class="notification-detail-summary">
+                <div class="notifications-dot" aria-hidden="true"><svg viewBox="0 0 24 24" width="9" height="9" fill="#fff" aria-hidden="true"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></div>
+                <div class="notification-detail-summary-text" data-tooltip="Confirmamos la cancelación de tu cuenta">Confirmamos la cancelación de tu cuent…</div>
+            </div>
+            <div class="notification-detail-status-box">
+                <div class="notification-detail-label">Status</div>
+                <div class="notification-detail-status-value">Received</div>
+            </div>
+            <div class="notification-detail-meta-row">
+                <div class="notification-detail-label">Channel</div>
+                <div class="notification-detail-meta-value">email</div>
+            </div>
+            <div class="notification-detail-meta-row">
+                <div class="notification-detail-label">Directory</div>
+                <div class="notification-detail-meta-value">cancellation-savings-account</div>
+            </div>
+            <div class="notification-detail-meta-row">
+                <div class="notification-detail-label">Delivered at</div>
+                <div class="notification-detail-meta-value" data-sac-field="delivered"></div>
+            </div>
+            <div class="notification-detail-meta-row">
+                <div class="notification-detail-label">Received at</div>
+                <div class="notification-detail-meta-value" data-sac-field="received"></div>
+            </div>
+            <div class="notification-detail-meta-row">
+                <div class="notification-detail-label">Provider</div>
+                <div class="notification-detail-meta-value">sendgrid</div>
+            </div>
+            <div class="notification-detail-meta-row">
+                <div class="notification-detail-label">Customer actions</div>
+                <div class="notification-detail-meta-value">1 OPEN</div>
+            </div>
+            <div class="notification-detail-meta-row">
+                <div class="notification-detail-label">ID</div>
+                <div class="notification-detail-meta-value" data-sac-field="id"></div>
+            </div>
+            <button type="button" class="notification-detail-view-email-btn" data-email-expand-id="notificationDetailEmailSavingsAccountCancelled" onclick="toggleNotificationDetailEmailView(this)" aria-expanded="false">View email</button>
+            <div class="notification-detail-email-expand nu-email-mock" id="notificationDetailEmailSavingsAccountCancelled" hidden>
+                <div class="nu-email-hero nu-email-hero--savings-closed">
+                    <div class="nu-email-savings-hero-art" aria-hidden="true">
+                        <span class="nu-email-savings-stars">✨</span>
+                        <span style="filter: grayscale(0.15);">🪙</span>
+                        <span class="nu-email-savings-coin-x" aria-hidden="true">×</span>
+                    </div>
+                    <h3 style="margin:0;font-size:17px;font-weight:800;line-height:1.3;">Tu cuenta de ahorros Nu quedó cerrada</h3>
+                </div>
+                <div class="nu-email-body-savings-white">
+                    <p><strong>Hola, Martha Lucía:</strong></p>
+                    <p>No es el final es un hasta pronto, fue un gusto haber compartido este viaje contigo.</p>
+                    <p class="nu-highlight" style="margin-bottom:0;">Te indicamos cuáles documentos recibirás después de un tiempo.</p>
+                </div>
+                <div class="nu-email-docs-box">
+                    <div class="nu-email-docs-item">
+                        <h4>Último extracto de tu cuenta</h4>
+                        <p>Lo recibirás aproximadamente a final de mes.</p>
+                    </div>
+                    <div class="nu-email-docs-item">
+                        <h4>Documento retención en la fuente</h4>
+                        <p>Lo recibirás a principio del próximo año.</p>
+                    </div>
+                </div>
+                <div class="nu-email-body-savings-tail">
+                    <p>Si tienes preguntas, siempre nos puedes escribir a <a href="mailto:ayuda@nu.com.co">ayuda@nu.com.co</a></p>
+                    <p style="margin-bottom:0;"><strong>Un abrazo,</strong><br><strong>Equipo Nu</strong></p>
+                </div>
+                <div class="nu-email-footer">
+                    <div class="nu-email-social"><span>f</span><span>◎</span><span>▶</span><span>in</span></div>
+                    <p>Si tienes alguna duda, dirígete al menú <strong>'Ayuda'</strong> directamente desde tu app para chatear con nosotros o escríbenos al correo ayuda@nu.com.co.</p>
+                    <p>Si estás en Colombia, puedes llamarnos al <strong>01 800 917 2000</strong> o si estás en Bogotá, al <strong>(+57) 601 357 1102</strong>.</p>
+                    <p><a href="#" onclick="return false;"><strong>Política de Privacidad Nu</strong></a></p>
+                    <p style="margin-top:14px;opacity:.85;">Nu C.F. hace parte de Nubank - NIT 901.658.107-2<br>© Nu Colombia Compañía de Financiamiento S.A. 2026</p>
+                    <p style="margin-top:10px;font-size:10px;opacity:.75;">VIGILADO Superfinanciera · Fogafín</p>
                 </div>
             </div>
     </template>
@@ -28012,7 +27624,7 @@ Un abrazo, equipo Nu. 💜</div>
                     <h3>¡Eliminaste tu tarjeta virtual!</h3>
                 </div>
                 <div class="nu-email-body-light">
-                    <p><strong>Hola, Carlos:</strong></p>
+                    <p><strong>Hola, Martha Lucía:</strong></p>
                     <p>Las suscripciones y cobros recurrentes que tenías con esta tarjeta ya no se van a poder hacer.</p>
                     <p>Si quieres volver a vincular tu tarjeta de crédito virtual a tus suscripciones y pagos recurrentes, necesitas:</p>
                     <ol style="margin:0 0 12px 18px;padding:0;color:#7c4dbc;font-weight:700;">
@@ -28079,7 +27691,7 @@ Un abrazo, equipo Nu. 💜</div>
                     <h3 style="margin-top:8px;">Tu paz y salvo ya está listo</h3>
                 </div>
                 <div class="nu-email-body-light">
-                    <p><strong>Hola, Carlos:</strong></p>
+                    <p><strong>Hola, Martha Lucía:</strong></p>
                     <p>Muchas gracias por contactarte con Nu Colombia Compañía de Financiamiento S.A. Esperamos te encuentres muy bien.</p>
                     <p>De acuerdo a tu solicitud, compartimos contigo el paz y salvo de la cuenta asociada a la tarjeta de crédito que tenías con nosotros, documento que encontrarás adjunto en este correo; en este te confirmamos que al día de hoy, no hay ningún valor pendiente de pago a la fecha con nosotros.</p>
                     <p>También queremos informarte que tanto tu tarjeta de crédito como el contrato de crédito asociado, fueron cancelados, respondiendo al pedido hecho en los correos anteriores.</p>
@@ -28186,7 +27798,7 @@ Un abrazo, equipo Nu. 💜</div>
                     <h3 style="margin:0;font-size:17px;font-weight:800;line-height:1.35;text-shadow:0 1px 8px rgba(0,0,0,0.35);">Así viviste un NUevo mes con tu Tarjeta Nu</h3>
                 </div>
                 <div class="nu-email-body-light" style="background:#fff;">
-                    <p style="font-size:18px;margin:0 0 14px;"><strong>Hola, Carlos:</strong></p>
+                    <p style="font-size:18px;margin:0 0 14px;"><strong>Hola, Martha Lucía:</strong></p>
                     <p>Un mes más junto a tu tarjeta de crédito Nu, en donde tuviste el control de tu dinero y el tiempo para vivir más momentos haciendo lo que amas.</p>
                     <p>Te mandamos el extracto de tu tarjeta, sin falta, en la fecha de corte que escogiste. <strong>Para abrirlo solo debes escribir el número de tu documento de identidad en el archivo adjunto.</strong></p>
                     <p>También puedes ver tu deuda desde la comodidad de tu app.</p>
@@ -31962,9 +31574,9 @@ Un abrazo, equipo Nu. 💜</div>
                 if (!lbl || !val) return;
                 var label = (lbl.textContent || '').trim();
                 if (label === 'Total balance') {
-                    val.textContent = formatMbCurrency(totalBal);
+                    val.textContent = totalBal === 0 ? '$0' : formatMbCurrency(totalBal);
                 } else if (label === 'Total yield') {
-                    val.textContent = formatMbYield(totalYld);
+                    val.textContent = '$' + totalYld.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
                 }
             });
         }
@@ -32192,7 +31804,7 @@ Un abrazo, equipo Nu. 💜</div>
             });
         })();
 
-        var mbTransactionsOptions = ['Ahorros', 'Mi primera Cajita', 'Prestaciones sociales', 'Emergencias'];
+        var mbTransactionsOptions = ['Ahorros'];
         function openMbTransactionsDropdown() {
             var dd = document.getElementById('mbTransactionsDropdown');
             if (dd) dd.classList.add('show');
@@ -33828,6 +33440,40 @@ Un abrazo, equipo Nu. 💜</div>
             filterNotificationsPanel();
         }
 
+        function addSavingsAccountCancellationNotificationHistory(at) {
+            var body = document.querySelector('#notificationsPanel .notifications-panel-body');
+            if (!body) return;
+            if (document.getElementById('notificationItemSavingsAccountCancelled')) return;
+            var nid = generateVirtualCardCancelledNotificationId();
+            var delivered = formatNotificationHistoryFullTs(at);
+            var received = formatNotificationHistoryFullTs(new Date(at.getTime() + 2000));
+            var dayKey = formatNotificationHistoryDayKey(at);
+            var labelText = formatNotificationHistoryDateLabel(at);
+            var ddmm = formatNotificationHistoryDdMm(at);
+            var hhmm = formatNotificationHistoryHhMm(at);
+            var timeline = findOrCreateNotificationsDayTimeline(body, dayKey, labelText);
+            var envSvg = '<svg viewBox="0 0 24 24" width="9" height="9" fill="#fff" aria-hidden="true"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>';
+            var item = document.createElement('div');
+            item.id = 'notificationItemSavingsAccountCancelled';
+            item.className = 'notifications-item notifications-item--clickable';
+            item.setAttribute('data-notification-channel', 'email');
+            item.setAttribute('data-notification-status', 'received');
+            item.setAttribute('role', 'button');
+            item.setAttribute('tabindex', '0');
+            item.setAttribute('data-sac-delivered', delivered);
+            item.setAttribute('data-sac-received', received);
+            item.setAttribute('data-sac-id', nid);
+            item.setAttribute('onclick', "openNotificationDetailPanel('savings-account-cancelled-email', event)");
+            item.setAttribute('onkeydown', "if(event.key==='Enter'||event.key===' '){event.preventDefault();openNotificationDetailPanel('savings-account-cancelled-email', event);}");
+            var tip = 'Confirmamos la cancelación de tu cuenta';
+            var escTip = tip.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
+            item.innerHTML = '<div class="notifications-dot" aria-hidden="true">' + envSvg + '</div>' +
+                '<div class="notifications-item-title" data-tooltip="' + escTip + '">Confirmamos la cancelación de tu cu…</div>' +
+                '<div class="notifications-item-meta"><span>Received</span><span class="notifications-item-time notifications-item-time--stack"><span>' + ddmm + '</span><span>' + hhmm + '</span></span></div>';
+            timeline.insertBefore(item, timeline.firstChild);
+            filterNotificationsPanel();
+        }
+
         function addPazYSalvoNotificationHistory(at) {
             var body = document.querySelector('#notificationsPanel .notifications-panel-body');
             if (!body) return;
@@ -34243,9 +33889,9 @@ Un abrazo, equipo Nu. 💜</div>
 
         // Profile Photo Viewer Modal: flechas pasan fotos, botón abajo gira
         const profilePhotos = [
-            'images/Carlos.png',
-            'images/Cedula%20Carlos%20Frontal.png',
-            'images/Cedula%20Carlos%20Trasera.png'
+            'images/Martha.png',
+            'images/Cedula%20Martha%20Frontal.png',
+            'images/Cedula%20Martha%20Trasera.png'
         ];
         let currentProfilePhotoIndex = 0;
         let profilePhotoRotation = 0;
@@ -35181,6 +34827,7 @@ Un abrazo, equipo Nu. 💜</div>
                 'nuevo-avances-cuenta': 'notificationDetailTplNuevoAvancesCuenta',
                 'sms-codigo-verificacion-056191': 'notificationDetailTplSmsCodigoVerificacion',
                 'extracto-cuenta-nu-email': 'notificationDetailTplExtractoCuentaNuEmail',
+                'savings-account-cancelled-email': 'notificationDetailTplSavingsAccountCancellationEmail',
                 'devolucion-25578': 'notificationDetailTplDevolucion25578',
                 'virtual-creditcard-cancelled': 'notificationDetailTplVirtualCreditcardCancelled',
                 'paz-y-salvo-listo': 'notificationDetailTplPazYSalvoListo',
@@ -35202,6 +34849,17 @@ Un abrazo, equipo Nu. 💜</div>
                     inner.querySelectorAll('[data-vcc-field="delivered"]').forEach(function (el) { el.textContent = del; });
                     inner.querySelectorAll('[data-vcc-field="received"]').forEach(function (el) { el.textContent = rec; });
                     inner.querySelectorAll('[data-vcc-field="id"]').forEach(function (el) { el.textContent = nid; });
+                }
+            }
+            if (kind === 'savings-account-cancelled-email' && event && event.currentTarget) {
+                var rowSac = event.currentTarget.closest ? event.currentTarget.closest('.notifications-item') : event.currentTarget;
+                if (rowSac && rowSac.getAttribute('data-sac-delivered')) {
+                    var delSac = rowSac.getAttribute('data-sac-delivered') || '';
+                    var recSac = rowSac.getAttribute('data-sac-received') || '';
+                    var nidSac = rowSac.getAttribute('data-sac-id') || '';
+                    inner.querySelectorAll('[data-sac-field="delivered"]').forEach(function (el) { el.textContent = delSac; });
+                    inner.querySelectorAll('[data-sac-field="received"]').forEach(function (el) { el.textContent = recSac; });
+                    inner.querySelectorAll('[data-sac-field="id"]').forEach(function (el) { el.textContent = nidSac; });
                 }
             }
             if (kind === 'paz-y-salvo-listo' && event && event.currentTarget) {
@@ -35573,6 +35231,7 @@ Un abrazo, equipo Nu. 💜</div>
             var btn = document.getElementById('cancelAccountBtn');
             if (btn) btn.style.display = 'none';
             showCancelSavingsSuccessToast();
+            addSavingsAccountCancellationNotificationHistory(new Date());
         }
 
         function showCancelSavingsSuccessToast() {
@@ -35921,320 +35580,11 @@ Un abrazo, equipo Nu. 💜</div>
         let currentBillIndex = 0;
         const billsData = [
             {
-                month: 'SEP 2026',
-                color: '#D99A50',
-                detailTemplate: 'statementGrid',
-                headerSubLine: 'MINIMUM PAYMENT $ 0,00',
-                minPayment: '$ 498.296,65',
-                closeDate: '12 AUG 2026',
-                dueDate: '01 SEP',
-                period: '12 JUL - 12 AUG',
-                totalExpenses: '$ 498.296,65',
-                paymentsDisplay: '$ 0,00',
-                reversalAdjustments: '$ 0,00',
-                interestsFees: '$ 0,00',
-                pastDueEne2029: '$ 0,00',
-                remainingBalance: '$ 498.296,65',
-                transactions: [
-                    { date: '01 Aug', description: 'Jeronimo Martins Colom 7/24', amount: '$ 1.785,21' },
-                    { date: '01 Aug', description: 'Jeronimo Martins Colom 10/10', amount: '$ 9.218,00' },
-                    { date: '01 Aug', description: 'Uber Rides 7/24', amount: '$ 431,00' },
-                    { date: '01 Aug', description: 'H28 Crepesywaffles H F 5/24', amount: '$ 2.129,17' },
-                    { date: '01 Aug', description: 'Rappi Colombia*DI 8/24', amount: '$ 2.716,67' },
-                    { date: '01 Aug', description: 'Uber Rides 7/24', amount: '$ 1.089,29' },
-                    { date: '01 Aug', description: 'Uber Rides 7/24', amount: '$ 1.311,00' },
-                    { date: '01 Aug', description: 'Dlo*Didi 7/24', amount: '$ 383,33' },
-                    { date: '01 Aug', description: 'Uber Rides 7/24', amount: '$ 1.415,33' },
-                    { date: '01 Aug', description: 'Dlo*Didi 7/24', amount: '$ 329,17' },
-                    { date: '01 Aug', description: 'Rappi Colombia*DI 7/24', amount: '$ 1.854,17' },
-                    { date: '01 Aug', description: 'Uber Rides 7/24', amount: '$ 654,38' },
-                    { date: '01 Aug', description: 'Uber Rides 7/24', amount: '$ 1.182,83' },
-                    { date: '01 Aug', description: 'Uber Rides 8/24', amount: '$ 999,75' },
-                    { date: '01 Aug', description: 'Didi Co Food 8/24', amount: '$ 2.684,38' },
-                    { date: '01 Aug', description: 'Rappi Colombia*DI 8/24', amount: '$ 1.333,33' },
-                    { date: '01 Aug', description: 'Juan Valdez Chapinero 7/24', amount: '$ 758,33' },
-                    { date: '01 Aug', description: 'Uber Rides 8/24', amount: '$ 936,54' },
-                    { date: '01 Aug', description: 'Sto 467 Chapinero Alto 7/24', amount: '$ 2.083,33' },
-                    { date: '01 Aug', description: 'Stones Rock Bogota 9/10', amount: '$ 23.320,00' },
-                    { date: '01 Aug', description: 'Jeronimo Martins Colom 9/16', amount: '$ 25.625,00' },
-                    { date: '01 Aug', description: 'Rappi Colombia*DI 7/24', amount: '$ 3.066,67' },
-                    { date: '01 Aug', description: 'Jeronimo Martins Colom 5/24', amount: '$ 1.521,42' },
-                    { date: '01 Aug', description: 'Uber Rides 7/24', amount: '$ 1.305,08' },
-                    { date: '01 Aug', description: 'Didi Co Food 8/24', amount: '$ 6.836,25' },
-                    { date: '01 Aug', description: 'Dlo*Didi 8/24', amount: '$ 642,83' },
-                    { date: '01 Aug', description: 'Rappi Colombia*DI 8/24', amount: '$ 1.695,83' },
-                    { date: '01 Aug', description: 'Mercatus 9 Sede Shangh 5/24', amount: '$ 1.779,17' },
-                    { date: '01 Aug', description: 'Inegocios 6/24', amount: '$ 2.283,33' },
-                    { date: '01 Aug', description: 'Jeronimo Martins Colom 6/24', amount: '$ 17.243,21' },
-                    { date: '01 Aug', description: 'Farmatodo Connecta 8/24', amount: '$ 2.818,75' },
-                    { date: '01 Aug', description: 'Uber Rides 8/24', amount: '$ 1.849,92' },
-                    { date: '01 Aug', description: 'Surtidora de Aves Buro 7/24', amount: '$ 937,50' },
-                    { date: '01 Aug', description: 'Punto de Venta 8/24', amount: '$ 9.470,83' },
-                    { date: '01 Aug', description: 'Jeronimo Martins Colom 7/24', amount: '$ 2.600,62' },
-                    { date: '01 Aug', description: 'Alkosto Akede-Eden 10/24', amount: '$ 57.691,67' },
-                    { date: '01 Aug', description: 'Uber Rides 8/24', amount: '$ 1.415,62' },
-                    { date: '01 Aug', description: 'Dlo*Didi 8/24', amount: '$ 750,54' },
-                    { date: '01 Aug', description: 'Didi Co Food 8/24', amount: '$ 1.503,38' },
-                    { date: '01 Aug', description: 'Surtidora de Aves Buro 7/24', amount: '$ 1.437,50' },
-                    { date: '01 Aug', description: 'Rappi Colombia*DI 8/24', amount: '$ 2.375,00' },
-                    { date: '01 Aug', description: 'Jeronimo Martins Colom 5/24', amount: '$ 27.861,04' },
-                    { date: '01 Aug', description: 'Uber Rides 7/24', amount: '$ 1.165,00' },
-                    { date: '01 Aug', description: 'Sr Wok Connecta Bogota 7/24', amount: '$ 2.412,50' },
-                    { date: '01 Aug', description: 'Dlo*Didi 7/24', amount: '$ 312,50' },
-                    { date: '01 Aug', description: 'Jeronimo Martins Colom 10/10', amount: '$ 13.932,30' },
-                    { date: '01 Aug', description: 'Rappi Colombia*DI 8/24', amount: '$ 1.995,83' },
-                    { date: '01 Aug', description: 'Dlo*Didi 7/24', amount: '$ 735,50' },
-                    { date: '01 Aug', description: 'Homecenter Dorado 8/24', amount: '$ 6.625,00' },
-                    { date: '01 Aug', description: 'Bold*Merkatto Cafe 5/24', amount: '$ 1.916,67' },
-                    { date: '01 Aug', description: 'Ks*Pagseguro Co 8/24', amount: '$ 778,79' },
-                    { date: '01 Aug', description: 'Dollarcity Multiplaza 8/24', amount: '$ 2.000,00' },
-                    { date: '01 Aug', description: 'Uber Rides 7/24', amount: '$ 1.404,33' },
-                    { date: '01 Aug', description: 'Farmatodo Hayuelos 8/24', amount: '$ 2.558,33' },
-                    { date: '01 Aug', description: 'Homecenter Tintal 6/24', amount: '$ 7.479,17' },
-                    { date: '01 Aug', description: 'Mercado Pago*Mercadoli 7/24', amount: '$ 15.458,33' },
-                    { date: '01 Aug', description: 'Rappi Colombia*DI 8/24', amount: '$ 825,00' },
-                    { date: '01 Aug', description: 'Rappi Colombia*DI 7/24', amount: '$ 1.083,33' },
-                    { date: '01 Aug', description: 'Sr Wok Connecta Bogota 7/24', amount: '$ 1.325,00' },
-                    { date: '01 Aug', description: 'Jeronimo Martins Colom 7/24', amount: '$ 5.240,04' },
-                    { date: '01 Aug', description: 'Uber Rides 8/24', amount: '$ 959,67' },
-                    { date: '01 Aug', description: 'Payu*Netflix 8/24', amount: '$ 1.245,83' },
-                    { date: '01 Aug', description: 'Rappi Colombia*DI 7/24', amount: '$ 250,00' },
-                    { date: '01 Aug', description: 'Sr Wok Connecta Bogota 7/24', amount: '$ 1.037,50' },
-                    { date: '01 Aug', description: 'Uber Rides 8/24', amount: '$ 1.489,04' },
-                    { date: '01 Aug', description: 'Rappi Colombia*DI 8/24', amount: '$ 2.558,33' },
-                    { date: '01 Aug', description: 'Bazaar Alsacia 10/10', amount: '$ 8.780,00' },
-                    { date: '01 Aug', description: 'Bold*Clttecno Shop 6/24', amount: '$ 2.208,33' },
-                    { date: '01 Aug', description: 'Inkanto Gastrobar 8/24', amount: '$ 12.744,88' },
-                    { date: '01 Aug', description: 'Bold*Eldeliciosofast 5/24', amount: '$ 5.206,25' },
-                    { date: '01 Aug', description: 'Uber Rides 7/24', amount: '$ 444,54' },
-                    { date: '01 Aug', description: 'Uber Rides 8/24', amount: '$ 1.641,62' },
-                    { date: '01 Aug', description: 'Jeronimo Martins Colom 6/24', amount: '$ 3.331,67' },
-                    { date: '01 Aug', description: 'Frisby H73 5/24', amount: '$ 3.604,17' },
-                    { date: '01 Aug', description: 'Uber Rides 7/24', amount: '$ 521,38' },
-                    { date: '01 Aug', description: 'Rappi Colombia*DI 8/24', amount: '$ 3.095,83' },
-                    { date: '01 Aug', description: 'Jeronimo Martins Colom 8/24', amount: '$ 21.586,00' },
-                    { date: '01 Aug', description: 'Mercado Pago*Compradep 10/10', amount: '$ 7.560,00' },
-                    { date: '01 Aug', description: 'Rappi Colombia*DI 8/24', amount: '$ 1.952,08' },
-                    { date: '01 Aug', description: 'Rappi Colombia*DI 5/24', amount: '$ 2.108,33' },
-                    { date: '01 Aug', description: 'Rappi Colombia*DI 9/24', amount: '$ 2.292,33' }
-                ]
-            },
-            {
-                month: 'AGO 2026',
-                color: '#D99A50',
-                detailTemplate: 'statementGrid',
-                headerSubLine: 'MINIMUM PAYMENT $ 0,00',
-                minPayment: '$ 514.459,15',
-                closeDate: '12 JUL 2026',
-                dueDate: '01 AGO (03 AGO)',
-                period: '11 JUN - 12 JUL',
-                totalExpenses: '$ 514.459,15',
-                paymentsDisplay: '$ 0,00',
-                reversalAdjustments: '$ 0,00',
-                interestsFees: '$ 0,00',
-                pastDueEne2029: '$ 0,00',
-                remainingBalance: '$ 514.459,15',
-                transactions: [
-                    { date: '01 Jul', description: 'Jeronimo Martins Colom 6/24', amount: '$ 1.785,21' },
-                    { date: '01 Jul', description: 'Jeronimo Martins Colom 9/10', amount: '$ 9.218,00' },
-                    { date: '01 Jul', description: 'Uber Rides 6/24', amount: '$ 431,00' },
-                    { date: '01 Jul', description: 'H28 Crepesywaffles H F 4/24', amount: '$ 2.129,17' },
-                    { date: '01 Jul', description: 'Rappi Colombia*DI 7/24', amount: '$ 2.716,67' },
-                    { date: '01 Jul', description: 'Uber Rides 6/24', amount: '$ 1.089,29' },
-                    { date: '01 Jul', description: 'Uber Rides 6/24', amount: '$ 1.311,00' },
-                    { date: '01 Jul', description: 'Dlo*Didi 6/24', amount: '$ 383,33' },
-                    { date: '01 Jul', description: 'Uber Rides 6/24', amount: '$ 1.415,33' },
-                    { date: '01 Jul', description: 'Dlo*Didi 6/24', amount: '$ 329,17' },
-                    { date: '01 Jul', description: 'Rappi Colombia*DI 6/24', amount: '$ 1.854,17' },
-                    { date: '01 Jul', description: 'Uber Rides 6/24', amount: '$ 654,38' },
-                    { date: '01 Jul', description: 'Uber Rides 6/24', amount: '$ 1.182,83' },
-                    { date: '01 Jul', description: 'Uber Rides 7/24', amount: '$ 999,75' },
-                    { date: '01 Jul', description: 'Didi Co Food 7/24', amount: '$ 2.684,38' },
-                    { date: '01 Jul', description: 'Rappi Colombia*DI 7/24', amount: '$ 1.333,33' },
-                    { date: '01 Jul', description: 'Juan Valdez Chapinero 6/24', amount: '$ 758,33' },
-                    { date: '01 Jul', description: 'Uber Rides 7/24', amount: '$ 936,54' },
-                    { date: '01 Jul', description: 'Sto 467 Chapinero Alto 6/24', amount: '$ 2.083,33' },
-                    { date: '01 Jul', description: 'Stones Rock Bogota 8/10', amount: '$ 23.320,00' },
-                    { date: '01 Jul', description: 'Jeronimo Martins Colom 8/16', amount: '$ 25.625,00' },
-                    { date: '01 Jul', description: 'Rappi Colombia*DI 6/24', amount: '$ 3.066,67' },
-                    { date: '01 Jul', description: 'Jeronimo Martins Colom 4/24', amount: '$ 1.521,42' },
-                    { date: '01 Jul', description: 'Uber Rides 6/24', amount: '$ 1.305,08' },
-                    { date: '01 Jul', description: 'Didi Co Food 7/24', amount: '$ 6.836,25' },
-                    { date: '01 Jul', description: 'Dlo*Didi 7/24', amount: '$ 642,83' },
-                    { date: '01 Jul', description: 'Rappi Colombia*DI 7/24', amount: '$ 1.695,83' },
-                    { date: '01 Jul', description: 'Mercatus 9 Sede Shangh 4/24', amount: '$ 1.779,17' },
-                    { date: '01 Jul', description: 'Inegocios 5/24', amount: '$ 2.283,33' },
-                    { date: '01 Jul', description: 'Jeronimo Martins Colom 5/24', amount: '$ 17.243,21' },
-                    { date: '01 Jul', description: 'Farmatodo Connecta 7/24', amount: '$ 2.818,75' },
-                    { date: '01 Jul', description: 'Uber Rides 7/24', amount: '$ 1.849,92' },
-                    { date: '01 Jul', description: 'Surtidora de Aves Buro 6/24', amount: '$ 937,50' },
-                    { date: '01 Jul', description: 'Punto de Venta 7/24', amount: '$ 9.470,83' },
-                    { date: '01 Jul', description: 'Jeronimo Martins Colom 6/24', amount: '$ 2.600,62' },
-                    { date: '01 Jul', description: 'Alkosto Akede-Eden 9/24', amount: '$ 57.691,67' },
-                    { date: '01 Jul', description: 'Uber Rides 7/24', amount: '$ 1.415,62' },
-                    { date: '01 Jul', description: 'Dlo*Didi 7/24', amount: '$ 750,54' },
-                    { date: '01 Jul', description: 'Didi Co Food 7/24', amount: '$ 1.503,38' },
-                    { date: '01 Jul', description: 'Surtidora de Aves Buro 6/24', amount: '$ 1.437,50' },
-                    { date: '01 Jul', description: 'Rappi Colombia*Dl 7/24', amount: '$ 2.375,00' },
-                    { date: '01 Jul', description: 'Jeronimo Martins Colom 4/24', amount: '$ 27.861,04' },
-                    { date: '01 Jul', description: 'Uber Rides 6/24', amount: '$ 1.165,00' },
-                    { date: '01 Jul', description: 'R15 Crepesywaffles Par 8/8', amount: '$ 16.162,50' },
-                    { date: '01 Jul', description: 'Uber Rides 7/24', amount: '$ 804,25' },
-                    { date: '01 Jul', description: 'Jeronimo Martins Colom 4/24', amount: '$ 2.655,50' },
-                    { date: '01 Jul', description: 'Unid Med Y de Diagnost 6/24', amount: '$ 1.437,50' },
-                    { date: '01 Jul', description: 'Sr Wok Connecta Bogota 6/24', amount: '$ 2.412,50' },
-                    { date: '01 Jul', description: 'Dlo*Didi 6/24', amount: '$ 312,50' },
-                    { date: '01 Jul', description: 'Jeronimo Martins Colom 9/10', amount: '$ 13.932,30' },
-                    { date: '01 Jul', description: 'Rappi Colombia*DI 7/24', amount: '$ 1.995,83' },
-                    { date: '01 Jul', description: 'Dlo*Didi 6/24', amount: '$ 735,50' },
-                    { date: '01 Jul', description: 'Homecenter Dorado 7/24', amount: '$ 6.625,00' },
-                    { date: '01 Jul', description: 'Bold*Merkatto Cafe 4/24', amount: '$ 1.916,67' },
-                    { date: '01 Jul', description: 'Ks*Pagseguro Co 7/24', amount: '$ 778,79' },
-                    { date: '01 Jul', description: 'Dollarcity Multiplaza 7/24', amount: '$ 2.000,00' },
-                    { date: '01 Jul', description: 'Uber Rides 6/24', amount: '$ 1.404,33' },
-                    { date: '01 Jul', description: 'Surtidora de Aves Buc 6/24', amount: '$ 1.437,50' },
-                    { date: '01 Jul', description: 'Mercado Pago*Mercadoli 6/24', amount: '$ 15.458,33' },
-                    { date: '01 Jul', description: 'Rappi Colombia*DI 7/24', amount: '$ 825,00' },
-                    { date: '01 Jul', description: 'Rappi Colombia*DI 6/24', amount: '$ 1.083,33' },
-                    { date: '01 Jul', description: 'Sr Wok Connecta Bogota 6/24', amount: '$ 1.325,00' },
-                    { date: '01 Jul', description: 'Jeronimo Martins Colom 6/24', amount: '$ 5.240,04' },
-                    { date: '01 Jul', description: 'Uber Rides 7/24', amount: '$ 959,67' },
-                    { date: '01 Jul', description: 'Payu*Netflix 7/24', amount: '$ 1.245,83' },
-                    { date: '01 Jul', description: 'Rappi Colombia*DI 6/24', amount: '$ 250,00' },
-                    { date: '01 Jul', description: 'Sr Wok Connecta Bogota 6/24', amount: '$ 1.037,50' },
-                    { date: '01 Jul', description: 'Uber Rides 7/24', amount: '$ 1.489,04' },
-                    { date: '01 Jul', description: 'Rappi Colombia*DI 7/24', amount: '$ 2.558,33' },
-                    { date: '01 Jul', description: 'Bazaar Alsacia 9/10', amount: '$ 8.780,00' }
-                ]
-            },
-            {
-                month: 'JUL 2026',
-                color: '#D99A50',
-                detailTemplate: 'statementGrid',
-                headerSubLine: 'MINIMUM PAYMENT $ 0,00',
-                minPayment: '$ 540.514,15',
-                closeDate: '11 JUN 2026',
-                dueDate: '01 JUL',
-                period: '12 MAY - 11 JUN',
-                totalExpenses: '$ 540.514,15',
-                paymentsDisplay: '$ 0,00',
-                reversalAdjustments: '$ 0,00',
-                interestsFees: '$ 0,00',
-                pastDueEne2029: '$ 0,00',
-                remainingBalance: '$ 540.514,15',
-                transactions: [
-                    { date: '01 Jun', description: 'Jeronimo Martins Colom 5/24', amount: '$ 1.785,21' },
-                    { date: '01 Jun', description: 'Jeronimo Martins Colom 8/10', amount: '$ 9.218,00' },
-                    { date: '01 Jun', description: 'Uber Rides 5/24', amount: '$ 431,00' },
-                    { date: '01 Jun', description: 'H28 Crepesywaffles H F 3/24', amount: '$ 2.129,17' },
-                    { date: '01 Jun', description: 'Rappi Colombia*DI 6/24', amount: '$ 2.716,67' },
-                    { date: '01 Jun', description: 'Uber Rides 5/24', amount: '$ 1.089,29' },
-                    { date: '01 Jun', description: 'Uber Rides 5/24', amount: '$ 1.311,00' },
-                    { date: '01 Jun', description: 'Dlo*Didi 5/24', amount: '$ 383,33' },
-                    { date: '01 Jun', description: 'Uber Rides 5/24', amount: '$ 1.415,33' },
-                    { date: '01 Jun', description: 'Dlo*Didi 5/24', amount: '$ 329,17' },
-                    { date: '01 Jun', description: 'Rappi Colombia*DI 5/24', amount: '$ 1.854,17' },
-                    { date: '01 Jun', description: 'Uber Rides 5/24', amount: '$ 654,38' },
-                    { date: '01 Jun', description: 'Uber Rides 5/24', amount: '$ 1.182,83' },
-                    { date: '01 Jun', description: 'Uber Rides 6/24', amount: '$ 999,75' },
-                    { date: '01 Jun', description: 'Didi Co Food 6/24', amount: '$ 2.684,38' },
-                    { date: '01 Jun', description: 'Rappi Colombia*DI 6/24', amount: '$ 1.333,33' },
-                    { date: '01 Jun', description: 'Juan Valdez Chapinero 5/24', amount: '$ 758,33' },
-                    { date: '01 Jun', description: 'Uber Rides 6/24', amount: '$ 936,54' },
-                    { date: '01 Jun', description: 'Sto 467 Chapinero Alto 5/24', amount: '$ 2.083,33' },
-                    { date: '01 Jun', description: 'Stones Rock Bogota 7/10', amount: '$ 23.320,00' },
-                    { date: '01 Jun', description: 'Jeronimo Martins Colom 7/16', amount: '$ 25.625,00' },
-                    { date: '01 Jun', description: 'Rappi Colombia*DI 5/24', amount: '$ 3.066,67' },
-                    { date: '01 Jun', description: 'Jeronimo Martins Colom 3/24', amount: '$ 1.521,42' },
-                    { date: '01 Jun', description: 'Dollarcity Multiplaza 8/8', amount: '$ 9.687,50' },
-                    { date: '01 Jun', description: 'Uber Rides 5/24', amount: '$ 1.305,08' },
-                    { date: '01 Jun', description: 'Didi Co Food 6/24', amount: '$ 6.836,25' },
-                    { date: '01 Jun', description: 'Dlo*Didi 6/24', amount: '$ 642,83' },
-                    { date: '01 Jun', description: 'Rappi Colombia*DI 6/24', amount: '$ 1.695,83' },
-                    { date: '01 Jun', description: 'Mercatus 9 Sede Shangh 3/24', amount: '$ 1.779,17' },
-                    { date: '01 Jun', description: 'Inegocios 4/24', amount: '$ 2.283,33' },
-                    { date: '01 Jun', description: 'Jeronimo Martins Colom 4/24', amount: '$ 17.243,21' },
-                    { date: '01 Jun', description: 'Farmatodo Connecta 6/24', amount: '$ 2.818,75' },
-                    { date: '01 Jun', description: 'Uber Rides 6/24', amount: '$ 1.849,92' },
-                    { date: '01 Jun', description: 'Mercado Pago*Mercadoli 6/6', amount: '$ 8.055,00' },
-                    { date: '01 Jun', description: 'Surtidora de Aves Buro 5/24', amount: '$ 937,50' },
-                    { date: '01 Jun', description: 'Punto de Venta 6/24', amount: '$ 9.470,83' },
-                    { date: '01 Jun', description: 'Jeronimo Martins Colom 5/24', amount: '$ 2.600,62' },
-                    { date: '01 Jun', description: 'Dunkin Donuts 8/8', amount: '$ 8.312,50' },
-                    { date: '01 Jun', description: 'Alkosto Akede-Eden 8/24', amount: '$ 57.691,67' },
-                    { date: '01 Jun', description: 'Uber Rides 6/24', amount: '$ 1.415,62' },
-                    { date: '01 Jun', description: 'Dlo*Didi 6/24', amount: '$ 750,54' },
-                    { date: '01 Jun', description: 'Didi Co Food 6/24', amount: '$ 1.503,38' },
-                    { date: '01 Jun', description: 'Surtidora de Aves Buro 5/24', amount: '$ 1.437,50' },
-                    { date: '01 Jun', description: 'R15 Crepesywaffles Par 7/8', amount: '$ 16.162,50' },
-                    { date: '01 Jun', description: 'Uber Rides 6/24', amount: '$ 804,25' },
-                    { date: '01 Jun', description: 'Jeronimo Martins Colom 3/24', amount: '$ 2.655,50' },
-                    { date: '01 Jun', description: 'Unid Med Y de Diagnost 5/24', amount: '$ 1.437,50' },
-                    { date: '01 Jun', description: 'Sr Wok Connecta Bogota 5/24', amount: '$ 2.412,50' },
-                    { date: '01 Jun', description: 'Dlo*Didi 5/24', amount: '$ 312,50' },
-                    { date: '01 Jun', description: 'Jeronimo Martins Colom 8/10', amount: '$ 13.932,30' },
-                    { date: '01 Jun', description: 'Rappi Colombia*Dl 6/24', amount: '$ 1.995,83' },
-                    { date: '01 Jun', description: 'Dlo*Didi 5/24', amount: '$ 735,50' },
-                    { date: '01 Jun', description: 'Homecenter Dorado 6/24', amount: '$ 6.625,00' },
-                    { date: '01 Jun', description: 'Bold*Merkatto Cafe 3/24', amount: '$ 1.916,67' },
-                    { date: '01 Jun', description: 'Ks*Pagseguro Co 6/24', amount: '$ 778,79' },
-                    { date: '01 Jun', description: 'Dollarcity Multiplaza 6/24', amount: '$ 2.000,00' },
-                    { date: '01 Jun', description: 'Uber Rides 5/24', amount: '$ 1.404,33' },
-                    { date: '01 Jun', description: 'Farmatodo Hayuelos 6/24', amount: '$ 2.558,33' },
-                    { date: '01 Jun', description: 'Homecenter Tintal 4/24', amount: '$ 7.479,17' },
-                    { date: '01 Jun', description: 'Surtidora de Aves Buro 5/24', amount: '$ 1.437,50' },
-                    { date: '01 Jun', description: 'Mercado Pago*Mercadoli 5/24', amount: '$ 15.458,33' },
-                    { date: '01 Jun', description: 'Rappi Colombia*DI 6/24', amount: '$ 825,00' },
-                    { date: '01 Jun', description: 'Rappi Colombia*DI 5/24', amount: '$ 1.083,33' },
-                    { date: '01 Jun', description: 'Sr Wok Connecta Bogota 5/24', amount: '$ 1.325,00' },
-                    { date: '01 Jun', description: 'Jeronimo Martins Colom 5/24', amount: '$ 5.240,04' },
-                    { date: '01 Jun', description: 'Uber Rides 6/24', amount: '$ 959,67' },
-                    { date: '01 Jun', description: 'Payu*Netflix 6/24', amount: '$ 1.245,83' },
-                    { date: '01 Jun', description: 'Rappi Colombia*DI 5/24', amount: '$ 250,00' },
-                    { date: '01 Jun', description: 'Sr Wok Connecta Bogota 5/24', amount: '$ 1.037,50' },
-                    { date: '01 Jun', description: 'Uber Rides 6/24', amount: '$ 1.489,04' },
-                    { date: '01 Jun', description: 'Rappi Colombia*DI 6/24', amount: '$ 2.558,33' },
-                    { date: '01 Jun', description: 'Bazaar Alsacia 8/10', amount: '$ 8.780,00' },
-                    { date: '01 Jun', description: 'Bold*Clttecno Shop 4/24', amount: '$ 2.208,33' },
-                    { date: '01 Jun', description: 'Inkanto Gastrobar 6/24', amount: '$ 12.744,88' },
-                    { date: '01 Jun', description: 'Bold*Eldeliciosofast 3/24', amount: '$ 5.206,25' },
-                    { date: '01 Jun', description: 'Uber Rides 5/24', amount: '$ 444,54' },
-                    { date: '01 Jun', description: 'Uber Rides 6/24', amount: '$ 1.641,62' },
-                    { date: '01 Jun', description: 'Jeronimo Martins Colom 4/24', amount: '$ 3.331,67' },
-                    { date: '01 Jun', description: 'Frisby H73 3/24', amount: '$ 3.604,17' },
-                    { date: '01 Jun', description: 'Uber Rides 5/24', amount: '$ 521,38' },
-                    { date: '01 Jun', description: 'Rappi Colombia*DI 6/24', amount: '$ 3.095,83' },
-                    { date: '01 Jun', description: 'Jeronimo Martins Colom 6/24', amount: '$ 21.586,00' },
-                    { date: '01 Jun', description: 'Mercado Pago*Compradep 8/10', amount: '$ 7.560,00' },
-                    { date: '01 Jun', description: 'Rappi Colombia*DI 6/24', amount: '$ 1.952,08' },
-                    { date: '01 Jun', description: 'Rappi Colombia*DI 3/24', amount: '$ 2.108,33' },
-                    { date: '01 Jun', description: 'Rappi Colombia*DI 6/24', amount: '$ 2.383,33' },
-                    { date: '01 Jun', description: 'Jeronimo Martins Colom 6/24', amount: '$ 6.265,21' },
-                    { date: '01 Jun', description: 'Bold*Eldeliciosofast 4/24', amount: '$ 2.143,75' },
-                    { date: '01 Jun', description: 'Uber Rides 5/24', amount: '$ 1.515,75' },
-                    { date: '01 Jun', description: 'Rappi Colombia*DI 5/24', amount: '$ 1.266,67' },
-                    { date: '01 Jun', description: 'Didi Co Food 6/24', amount: '$ 1.601,96' },
-                    { date: '01 Jun', description: 'Uber Rides 5/24', amount: '$ 1.588,42' },
-                    { date: '01 Jun', description: 'Unid Med Y de Diagnost 5/24', amount: '$ 1.437,50' },
-                    { date: '01 Jun', description: 'Mercado Pago*Mercadoli 6/36', amount: '$ 11.695,50' },
-                    { date: '01 Jun', description: 'Dlo*Didi 6/24', amount: '$ 1.645,83' },
-                    { date: '01 Jun', description: 'Uber Rides 5/24', amount: '$ 487,00' },
-                    { date: '01 Jun', description: 'Dlo*Netflix.Com 5/24', amount: '$ 1.245,83' },
-                    { date: '01 Jun', description: 'Exito la Felicidad 5/24', amount: '$ 1.074,17' },
-                    { date: '01 Jun', description: 'Didi Co Food 6/24', amount: '$ 2.714,17' },
-                    { date: '01 Jun', description: 'Agrocampo 6/24', amount: '$ 19.317,21' },
-                    { date: '01 Jun', description: 'Rappi Colombia*DI 3/24', amount: '$ 2.287,50' },
-                    { date: '01 Jun', description: 'Tanuki Foods 6/24', amount: '$ 11.381,17' },
-                    { date: '01 Jun', description: 'Uber Rides 5/24', amount: '$ 1.683,50' },
-                    { date: '01 Jun', description: 'Didi Co Food 4/24', amount: '$ 2.008,83' }
-                ]
-            },
-            {
                 month: 'JUN 2026',
                 color: '#69B3C2',
                 type: 'basic',
                 headerTitle: 'MINIMUM ESTIMATED PAYMENT',
-                minPayment: '$ 576.439,89',
+                minPayment: '$ 0,00',
                 closeDate: '12 MAY',
                 dueDate: '1 JUN',
                 period: '11 ABR - 12 MAY',
@@ -36357,6 +35707,7 @@ Un abrazo, equipo Nu. 💜</div>
                     { date: '4 ABR', description: 'Rappi Colombia*DI 2/24', amount: '$ 2.287,50' },
                     { date: '6 ABR', description: 'Frisby H73 2/24', amount: '$ 3.604,17' },
                     { date: '6 ABR', description: 'Dlo*Didi Food Co Payin 2/24', amount: '$ 1.818,04' },
+                    { date: '11 ABR', description: 'Payment received', amount: '-$ 10.044.153,57', isPayment: true },
                 ]
             },
             {
@@ -41197,7 +40548,7 @@ Un abrazo, equipo Nu. 💜</div>
         <div class="challenge-photo-viewer-box" onclick="event.stopPropagation()">
             <div class="challenge-photo-viewer-header">
                 <div>
-                    <div id="challengePhotoViewerSerial" class="challenge-photo-viewer-serial">d3b07384-d92d-4e4a-bc0d-0315938f3653</div>
+                    <div id="challengePhotoViewerSerial" class="challenge-photo-viewer-serial">a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6</div>
                     <div class="challenge-photo-viewer-ts">11/02/2025 - 21:34:21</div>
                 </div>
                 <button type="button" class="challenge-photo-viewer-close" onclick="closeChallengePhotoViewer()" aria-label="Cerrar">×</button>
@@ -41205,7 +40556,7 @@ Un abrazo, equipo Nu. 💜</div>
             <div class="challenge-photo-viewer-stage">
                 <button type="button" class="challenge-photo-viewer-nav challenge-photo-viewer-nav--prev" onclick="challengePhotoViewerNavStub()" aria-label="Anterior">‹</button>
                 <div class="challenge-photo-viewer-img-wrap">
-                    <img id="challengePhotoViewerImg" src="images/Carlos.png" alt="">
+                    <img id="challengePhotoViewerImg" src="images/Martha.png" alt="">
                 </div>
                 <button type="button" class="challenge-photo-viewer-nav challenge-photo-viewer-nav--next" onclick="challengePhotoViewerNavStub()" aria-label="Siguiente">›</button>
             </div>
