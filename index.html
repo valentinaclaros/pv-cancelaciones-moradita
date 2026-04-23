@@ -15910,6 +15910,9 @@
         #contestationHistoryWidget .status-resolved {
             color: #2e7d32;
         }
+        #contestationHistoryWidget .status-ready-dispute {
+            color: #9575CD;
+        }
         #contestationHistoryWidget .status-canceled {
             color: #888;
         }
@@ -24303,8 +24306,9 @@
                                     <div class="contestation-filter-group">
                                         <label class="contestation-filter-label" for="contestationFilterStatus">Status</label>
                                         <select id="contestationFilterStatus" class="contestation-filter-dropdown" aria-label="Status">
-                                            <option value="" selected disabled>Select status</option>
+                                            <option value="" selected>All statuses</option>
                                             <option value="resolved">Resolved</option>
+                                            <option value="ready_dispute">Ready to Dispute</option>
                                             <option value="pending">Pending</option>
                                             <option value="canceled">Canceled</option>
                                         </select>
@@ -24312,7 +24316,10 @@
                                     <div class="contestation-filter-group">
                                         <label class="contestation-filter-label" for="contestationFilterReason">Reason</label>
                                         <select id="contestationFilterReason" class="contestation-filter-dropdown" aria-label="Reason">
-                                            <option value="" selected disabled>Select a reason</option>
+                                            <option value="" selected>All reasons</option>
+                                            <option value="theft">Theft</option>
+                                            <option value="coercion">Coercion</option>
+                                            <option value="dispute_goods">Dispute with goods/service</option>
                                             <option value="unrecognized">Unrecognized purchase</option>
                                             <option value="duplicate">Duplicate charge</option>
                                             <option value="other">Other</option>
@@ -24322,15 +24329,79 @@
                             </div>
                             <div class="contestation-content">
                                 <div class="contestation-list-scroll">
-                                    <div class="contestation-item" onclick="openComplaintModal()" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openComplaintModal();}">
+                                    <div class="contestation-item" onclick="openComplaintModal(8)" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openComplaintModal(8);}" data-contestation-status="ready_dispute" data-contestation-reason="dispute_goods" data-complaint-id="8" data-search-text="04/17/2026 04-17-2026 1 purchases COP 79,200.00 79200 ready dispute goods service 8 69e2b8b1-1b2b-422b-82f9-64429d94e817 69e2b8b1-123a-46a9-a71a-9396a8a4b1f4">
                                         <div class="contestation-item-grid">
                                             <div>
-                                                <div class="contestation-item-date">01/22/2026</div>
+                                                <div class="contestation-item-date">04/17/2026</div>
                                                 <div class="contestation-purchases-line">1 purchases</div>
                                             </div>
                                             <div style="text-align: center;">
                                                 <div class="contestation-total-lbl">Total</div>
-                                                <div class="contestation-total-amt">COP 59,900.00</div>
+                                                <div class="contestation-total-amt">COP 79,200.00</div>
+                                            </div>
+                                            <div style="text-align: right;">
+                                                <div class="contestation-status-line status-ready-dispute">Ready to Dispute</div>
+                                                <div class="contestation-reason">Dispute with goods/service</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="contestation-item contestation-item--purple" onclick="openComplaintModal(6)" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openComplaintModal(6);}" data-contestation-status="resolved" data-contestation-reason="coercion" data-complaint-id="6" data-search-text="03/22/2026 03-22-2026 1 purchases COP 1,000,000.00 1000000 resolved coercion 6">
+                                        <div class="contestation-item-grid">
+                                            <div>
+                                                <div class="contestation-item-date">03/22/2026</div>
+                                                <div class="contestation-purchases-line">1 purchases</div>
+                                            </div>
+                                            <div style="text-align: center;">
+                                                <div class="contestation-total-lbl">Total</div>
+                                                <div class="contestation-total-amt">COP 1,000,000.00</div>
+                                            </div>
+                                            <div style="text-align: right;">
+                                                <div class="contestation-status-line status-resolved">Resolved</div>
+                                                <div class="contestation-reason">Coercion</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="contestation-item contestation-item--purple" onclick="openComplaintModal(7)" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openComplaintModal(7);}" data-contestation-status="resolved" data-contestation-reason="theft" data-complaint-id="7" data-search-text="03/21/2026 03-21-2026 5 purchases COP 1,986,000.00 1986000 resolved theft 7 7d3a9f1e-2b4c-5a6d-8e9f-0a1b2c3d4e5f">
+                                        <div class="contestation-item-grid">
+                                            <div>
+                                                <div class="contestation-item-date">03/21/2026</div>
+                                                <div class="contestation-purchases-line">5 purchases</div>
+                                            </div>
+                                            <div style="text-align: center;">
+                                                <div class="contestation-total-lbl">Total</div>
+                                                <div class="contestation-total-amt">COP 1,986,000.00</div>
+                                            </div>
+                                            <div style="text-align: right;">
+                                                <div class="contestation-status-line status-resolved">Resolved</div>
+                                                <div class="contestation-reason">Theft</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="contestation-item" onclick="openComplaintModal(5)" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openComplaintModal(5);}" data-contestation-status="resolved" data-contestation-reason="dispute_goods" data-complaint-id="5" data-search-text="10/15/2025 10-15-2025 1 purchases COP 348,482.49 34848249 resolved dispute goods service 5">
+                                        <div class="contestation-item-grid">
+                                            <div>
+                                                <div class="contestation-item-date">10/15/2025</div>
+                                                <div class="contestation-purchases-line">1 purchases</div>
+                                            </div>
+                                            <div style="text-align: center;">
+                                                <div class="contestation-total-lbl">Total</div>
+                                                <div class="contestation-total-amt">COP 348,482.49</div>
+                                            </div>
+                                            <div style="text-align: right;">
+                                                <div class="contestation-status-line status-resolved">Resolved</div>
+                                                <div class="contestation-reason">Dispute with goods/service</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="contestation-item" onclick="openComplaintModal()" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openComplaintModal();}" data-contestation-status="resolved" data-contestation-reason="unrecognized" data-complaint-id="" data-search-text="07/25/2025 07-25-2025 1 purchases COP 66,000.00 66000 resolved unrecognized purchase">
+                                        <div class="contestation-item-grid">
+                                            <div>
+                                                <div class="contestation-item-date">07/25/2025</div>
+                                                <div class="contestation-purchases-line">1 purchases</div>
+                                            </div>
+                                            <div style="text-align: center;">
+                                                <div class="contestation-total-lbl">Total</div>
+                                                <div class="contestation-total-amt">COP 66,000.00</div>
                                             </div>
                                             <div style="text-align: right;">
                                                 <div class="contestation-status-line status-resolved">Resolved</div>
@@ -24338,22 +24409,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="contestation-item contestation-item--purple" onclick="openComplaintModal(4)" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openComplaintModal(4);}">
-                                        <div class="contestation-item-grid">
-                                            <div>
-                                                <div class="contestation-item-date">10/24/2025</div>
-                                                <div class="contestation-purchases-line">1 purchases</div>
-                                            </div>
-                                            <div style="text-align: center;">
-                                                <div class="contestation-total-lbl">Total</div>
-                                                <div class="contestation-total-amt">COP 776,274.27</div>
-                                            </div>
-                                            <div style="text-align: right;">
-                                                <div class="contestation-status-line status-canceled">Canceled</div>
-                                                <div class="contestation-reason">Scam</div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <div id="contestationFilterEmpty" class="contestation-filter-empty" style="display: none; padding: 20px 12px; text-align: center; color: #666; font-size: 14px;" role="status" aria-live="polite">No contestations match your filters.</div>
                                 </div>
                                 <div class="contestation-pagination">
                                     <button type="button" class="contestation-page-btn" aria-label="Previous page">&lt;- Previous</button>
@@ -28892,6 +28948,60 @@ Un abrazo, equipo Nu. 💜</div>
     <script>
         'use strict';
         
+        function applyContestationHistoryFilters() {
+            var widget = document.getElementById('contestationHistoryWidget');
+            if (!widget) return;
+            var scroll = widget.querySelector('.contestation-list-scroll');
+            if (!scroll) return;
+            var searchEl = widget.querySelector('.contestation-search');
+            var statusEl = document.getElementById('contestationFilterStatus');
+            var reasonEl = document.getElementById('contestationFilterReason');
+            var q = (searchEl && searchEl.value ? searchEl.value : '').trim().toLowerCase();
+            var statusVal = statusEl && statusEl.value ? String(statusEl.value).toLowerCase() : '';
+            var reasonVal = reasonEl && reasonEl.value ? String(reasonEl.value).toLowerCase() : '';
+            var qDigits = q.replace(/\D/g, '');
+            var items = scroll.querySelectorAll('.contestation-item');
+            var visible = 0;
+            var emptyEl = document.getElementById('contestationFilterEmpty');
+            items.forEach(function (item) {
+                var st = (item.getAttribute('data-contestation-status') || '').toLowerCase();
+                var rs = (item.getAttribute('data-contestation-reason') || '').toLowerCase();
+                var passStatus = !statusVal || st === statusVal;
+                var passReason = !reasonVal || rs === reasonVal;
+                var blob = (item.getAttribute('data-search-text') || '').toLowerCase();
+                var passSearch = !q;
+                if (!passSearch) {
+                    passSearch = blob.indexOf(q) !== -1;
+                    if (!passSearch && qDigits.length >= 2) {
+                        var blobDigits = blob.replace(/\D/g, '');
+                        passSearch = blobDigits.indexOf(qDigits) !== -1;
+                    }
+                }
+                var show = passStatus && passReason && passSearch;
+                item.style.display = show ? '' : 'none';
+                if (show) visible++;
+            });
+            var hasActiveFilter = !!(q || statusVal || reasonVal);
+            if (emptyEl) {
+                emptyEl.style.display = visible === 0 && hasActiveFilter ? 'block' : 'none';
+            }
+        }
+
+        function initContestationHistoryFilters() {
+            var widget = document.getElementById('contestationHistoryWidget');
+            if (!widget) return;
+            var search = widget.querySelector('.contestation-search');
+            var statusSel = document.getElementById('contestationFilterStatus');
+            var reasonSel = document.getElementById('contestationFilterReason');
+            var apply = applyContestationHistoryFilters;
+            if (search) {
+                search.addEventListener('input', apply);
+                search.addEventListener('search', apply);
+            }
+            if (statusSel) statusSel.addEventListener('change', apply);
+            if (reasonSel) reasonSel.addEventListener('change', apply);
+        }
+
         // Guardar el timeline original al cargar la página
         var originalTimeline = '';
         document.addEventListener('DOMContentLoaded', function() {
@@ -28905,6 +29015,7 @@ Un abrazo, equipo Nu. 💜</div>
                 debitPw1Search.addEventListener('search', debitPw1ApplyAllFilters);
             }
             debitPw1MfInit();
+            initContestationHistoryFilters();
         });
 
         function toggleQuotasVirtualDetail(event) {
@@ -36841,6 +36952,14 @@ Un abrazo, equipo Nu. 💜</div>
             } else if (complaintId === 4) {
                 // Scam — COP 776,274.27, barra morada, Analyzed (1)
                 loadComplaint4Data();
+            } else if (complaintId === 5) {
+                loadComplaint0Data();
+            } else if (complaintId === 6) {
+                loadComplaint1Data();
+            } else if (complaintId === 7) {
+                loadComplaint2Data();
+            } else if (complaintId === 8) {
+                loadComplaint3Data();
             }
             switchComplaintDataTab('contestation');
             setComplaintTimelineFilter('all');
