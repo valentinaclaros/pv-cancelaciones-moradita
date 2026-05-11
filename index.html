@@ -17970,6 +17970,137 @@
             font-size: 20px;
             color: #666;
         }
+
+        /* ============================================================
+           Footers estandarizados (Refresh + Source + Rate this widget)
+           ============================================================ */
+
+        .widget-reload-loading {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 50px 20px;
+            color: #888;
+            font-size: 13px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .widget-reload-spinner {
+            width: 28px;
+            height: 28px;
+            border: 3px solid #e0d7ee;
+            border-top-color: #7C4DBC;
+            border-radius: 50%;
+            animation: notificationsRefreshSpin 0.8s linear infinite;
+        }
+        .widget-reload-icon-btn.is-spinning svg {
+            animation: notificationsRefreshSpin 0.8s linear infinite;
+        }
+        .widget-reload-icon-btn:disabled,
+        .widget-reload-icon-btn.is-spinning {
+            cursor: wait;
+            opacity: 0.85;
+        }
+
+        /* Person Information footer (label + Bug + Refresh) */
+        #personInfoFooter.widget-footer-source {
+            padding: 8px 14px;
+            min-height: 0;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            gap: 8px;
+            background: #fff;
+            border-top: 1px solid #ececec;
+        }
+        #personInfoFooter .pi-footer-label {
+            font-size: 12px;
+            color: #555;
+            font-weight: 400;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #personInfoFooter .pi-footer-actions {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        #personInfoFooter .pi-footer-icon-btn {
+            background: none;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+            color: #555;
+            display: inline-flex;
+            align-items: center;
+            line-height: 0;
+            transition: color 0.15s;
+        }
+        #personInfoFooter .pi-footer-icon-btn:hover {
+            color: #7C4DBC;
+        }
+
+        /* Footer estandarizado genérico para Fraud, Current Situation y Credit Card Account */
+        #fraudFooter.std-widget-footer,
+        #currentSituationFooter.std-widget-footer,
+        #creditCardAccountFooter.std-widget-footer,
+        .std-widget-footer {
+            padding: 8px 14px;
+            min-height: 0;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            gap: 8px;
+            background: #fff;
+            border-top: 1px solid #ececec;
+            overflow: visible;
+        }
+        .std-footer-left,
+        .std-footer-right {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex: 0 0 auto;
+        }
+        .std-footer-label {
+            font-size: 12px;
+            color: #555;
+            font-weight: 400;
+            font-family: Arial, Helvetica, sans-serif;
+            white-space: nowrap;
+        }
+        .std-footer-icon-btn {
+            background: none;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+            color: #555;
+            display: inline-flex;
+            align-items: center;
+            line-height: 0;
+            transition: color 0.15s;
+        }
+        .std-footer-icon-btn:hover {
+            color: #7C4DBC;
+        }
+
+        /* Variante compacta para footers en columnas angostas (Fraud) */
+        #fraudFooter.std-widget-footer {
+            padding: 8px 10px;
+            gap: 6px;
+        }
+        #fraudFooter.std-widget-footer .std-footer-left,
+        #fraudFooter.std-widget-footer .std-footer-right {
+            gap: 5px;
+        }
+        #fraudFooter.std-widget-footer .std-footer-label {
+            font-size: 10px;
+        }
+        #fraudFooter.std-widget-footer .std-footer-icon-btn svg {
+            width: 13px;
+            height: 13px;
+        }
     </style>
 </head>
 <body>
@@ -18212,8 +18343,14 @@
                         </div>
                     </div>
                     <div class="widget-footer-source" id="personInfoFooter">
-                        <div class="person-info-footer-visual" aria-hidden="true">
-                            <img src="images/PersonInformation.png" alt="" loading="lazy" decoding="async">
+                        <span class="pi-footer-label">General</span>
+                        <div class="pi-footer-actions">
+                            <button type="button" class="pi-footer-icon-btn" title="Bug" aria-label="Bug">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><ellipse cx="12" cy="13" rx="6.5" ry="3.5" stroke="currentColor" stroke-width="1.5"/><path d="M12 5v3M9.5 8h5M6.5 16l-2.5 2M17.5 16l2.5 2M5.5 12H3M18.5 12H21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="12" cy="7" r="2.25" stroke="currentColor" stroke-width="1.5"/></svg>
+                            </button>
+                            <button type="button" class="pi-footer-icon-btn widget-reload-icon-btn" title="Refresh" aria-label="Refresh" onclick="widgetReload(this, '#personInfoContent', event)">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M4 4v5h5M20 20v-5h-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M20.49 9A9 9 0 0 0 5.64 5.64L4 4m16 16l-1.64-1.64A9 9 0 0 1 3.51 15" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -18341,9 +18478,17 @@
                             </div>
                         </div>
                     </div>
-                    <div class="widget-footer-source" id="fraudFooter">
-                        <div class="fraud-footer-visual" aria-hidden="true">
-                            <img src="images/FraudInvestigation.png" alt="" loading="lazy" decoding="async">
+                    <div class="widget-footer-source std-widget-footer" id="fraudFooter">
+                        <div class="std-footer-left">
+                            <button type="button" class="std-footer-icon-btn widget-reload-icon-btn" title="Refresh" aria-label="Refresh" onclick="widgetReload(this, '#fraudContent', event)">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M4 4v5h5M20 20v-5h-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M20.49 9A9 9 0 0 0 5.64 5.64L4 4m16 16l-1.64-1.64A9 9 0 0 1 3.51 15" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                            </button>
+                            <span class="std-footer-label">Fraud Investigations - Core</span>
+                        </div>
+                        <div class="std-footer-right">
+                            <span class="std-footer-label">Rate this widget</span>
+                            <button type="button" class="std-footer-icon-btn" title="Like" aria-label="Thumbs up"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3H14zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                            <button type="button" class="std-footer-icon-btn" title="Dislike" aria-label="Thumbs down"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3H10zM17 2h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
                         </div>
                     </div>
                 </div>
@@ -21074,8 +21219,18 @@
                         </div>
                     </div>
 
-                    <div class="current-situation-footer-visual" aria-hidden="true">
-                        <img src="images/collections.png" alt="" loading="eager" decoding="async">
+                    <div class="widget-footer-source std-widget-footer" id="currentSituationFooter">
+                        <div class="std-footer-left">
+                            <button type="button" class="std-footer-icon-btn widget-reload-icon-btn" title="Refresh" aria-label="Refresh" onclick="widgetReload(this, '#creditCardContent', event)">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M4 4v5h5M20 20v-5h-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M20.49 9A9 9 0 0 0 5.64 5.64L4 4m16 16l-1.64-1.64A9 9 0 0 1 3.51 15" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                            </button>
+                            <span class="std-footer-label">Collections</span>
+                        </div>
+                        <div class="std-footer-right">
+                            <span class="std-footer-label">Rate this widget</span>
+                            <button type="button" class="std-footer-icon-btn" title="Like" aria-label="Thumbs up"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3H14zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                            <button type="button" class="std-footer-icon-btn" title="Dislike" aria-label="Thumbs down"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3H10zM17 2h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                        </div>
                     </div>
                 </div>
 
@@ -22474,9 +22629,17 @@
                         </div><!-- End scrollable container -->
 
                     </div>
-                    <div class="widget-footer-source" id="creditCardAccountFooter">
-                        <div class="cca-operations-footer-wrap">
-                            <img src="images/operations.png" alt="Co-Operations" class="cca-operations-footer-img" loading="lazy" decoding="async">
+                    <div class="widget-footer-source std-widget-footer" id="creditCardAccountFooter">
+                        <div class="std-footer-left">
+                            <button type="button" class="std-footer-icon-btn widget-reload-icon-btn" title="Refresh" aria-label="Refresh" onclick="widgetReload(this, '#creditCardAccountContent', event)">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M4 4v5h5M20 20v-5h-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M20.49 9A9 9 0 0 0 5.64 5.64L4 4m16 16l-1.64-1.64A9 9 0 0 1 3.51 15" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                            </button>
+                            <span class="std-footer-label">Co-Operations</span>
+                        </div>
+                        <div class="std-footer-right">
+                            <span class="std-footer-label">Rate this widget</span>
+                            <button type="button" class="std-footer-icon-btn" title="Like" aria-label="Thumbs up"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3H14zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                            <button type="button" class="std-footer-icon-btn" title="Dislike" aria-label="Thumbs down"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3H10zM17 2h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
                         </div>
                     </div>
                 </div>
@@ -37055,6 +37218,31 @@ Un abrazo, equipo Nu. 💜</div>
                 dragging = false;
             });
         })();
+
+        // Refresh genérico para footers estandarizados (muestra spinner 2s y restaura)
+        function widgetReload(btn, contentSelector, ev) {
+            if (ev) {
+                ev.preventDefault();
+                ev.stopPropagation();
+            }
+            if (!btn) return;
+            if (btn.classList.contains('is-spinning')) return;
+            var widget = btn.closest('.widget');
+            if (!widget) return;
+            var content = widget.querySelector(contentSelector);
+            if (!content) return;
+            var originalHtml = content.innerHTML;
+            var prevScroll = content.scrollTop || 0;
+            content.innerHTML = '<div class="widget-reload-loading"><div class="widget-reload-spinner" aria-hidden="true"></div><span>Loading…</span></div>';
+            btn.classList.add('is-spinning');
+            btn.setAttribute('aria-busy', 'true');
+            setTimeout(function () {
+                content.innerHTML = originalHtml;
+                content.scrollTop = prevScroll;
+                btn.classList.remove('is-spinning');
+                btn.removeAttribute('aria-busy');
+            }, 2000);
+        }
     </script>
 
     <div id="outgoingTransferDetailModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="outgoingTransferDetailTitle" onclick="if (event.target === this) closeOutgoingTransferDetailModal()">
